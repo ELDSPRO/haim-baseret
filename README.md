@@ -10,6 +10,8 @@
 
 כרזות הדמויות: [קובי](docs/posters/kobi.png) · [נועה](docs/posters/noa.png) · [אמיר](docs/posters/amir.png) · [תמר](docs/posters/tamar.png).
 
+[פוסטר להדפסה עם QR למשחק הציבורי](docs/posters/qr-public.pdf).
+
 ## בתוך המשחק
 
 - ארבע דמויות ושלוש רמות קושי.
