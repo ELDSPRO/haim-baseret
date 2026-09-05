@@ -15,6 +15,7 @@ for (const loc of G.LOCATIONS) placeCopy[loc.id][0]=loc.name;
 const goalDescriptions={wealth:'שיישאר משהו אחרי השכירות',craft:'כי ״יש לי עין״ זה לא מקצוע',reputation:'שיחזירו לך טלפון',happiness:'גם מחוץ לחדר העריכה'};
 const goalColors={wealth:'#ceab5c',craft:'#79a7ab',reputation:'#cb7b5c',happiness:'#92a880'};
 let state,selected='home',bankTab='funds',festivalFilmId=null,started=false,feedback='',muted=true,toastTimer,dialogReturnFocus=null,lastEnding=null;
+let tutorial=null;
 let saved=null;
 try{const raw=localStorage.getItem(SAVE_KEY);saved=raw?G.validateSave(JSON.parse(raw)):null;muted=localStorage.getItem(SOUND_KEY)!=='on';}catch{}
 state=saved||G.createGame({name:'קובי',difficulty:'normal',seed:Date.now()});
@@ -152,7 +153,7 @@ function renderMap(){
  updateCityArtwork();
  $('map-locations').innerHTML=G.LOCATIONS.map(original=>{const loc=locationInfo(original.id),p=positions[loc.id];return `<button class="map-location ${selected===loc.id?'selected':''}" style="left:${p[0]}%;top:${p[1]}%" data-location="${loc.id}" aria-label="${esc(loc.name)}" aria-pressed="${selected===loc.id}"><span class="location-label"><b>${esc(loc.name)}</b><small>${esc(({home:'לנוח ולחיות',set:'לעבוד ולהתקדם',school:'ללמוד את המקצוע',cafe:'מה חדש בתקופה?',studio:'לעשות את הסרט שלך',festival:'לתת לעולם לראות',gear:'מציאות מתחלפות',bank:state.funding?.application?'הגשה בבדיקה':'קרנות וכסף'})[loc.id])}</small></span></button>`;}).join('');
  const p=positions[state.location]||positions.home;$('player-token').style.left=`${p[0]+8}%`;$('player-token').style.top=`${p[1]+5}%`;$('player-token').classList.toggle('amir-token',state.characterId==='amir');const castIndex=getCharacter().portraitIndex;$('player-token').style.setProperty('--cast-x',`${castIndex%2*100}%`);$('player-token').style.setProperty('--cast-y',`${Math.floor(castIndex/2)*100}%`);document.querySelector('.map-legend').innerHTML=`<i></i> כאן ${esc(state.name)}`;
- $('map-locations').querySelectorAll('[data-location]').forEach(button=>button.addEventListener('click',()=>{selected=button.dataset.location;feedback='';renderMap();renderPanel();focusActionPanel();}));
+ $('map-locations').querySelectorAll('[data-location]').forEach(button=>button.addEventListener('click',()=>navigateTo(button.dataset.location)));
 }
 let currentAdvice=null;
 function hintHTML(id){return currentAdvice?.id===id?`<span class="choice-hint">מחשבה קטנה: ${esc(currentAdvice.reason)}</span>`:'';}
@@ -194,7 +195,7 @@ function actionHTML(a){
  return `<button class="action action--${kind}${a.weeklyOffer?' weekly-offer':''}${a.offerUsed?' offer-used':''}" data-action="${esc(a.id)}" ${a.disabled||state.status!=='playing'||state.event?'disabled':''}><span class="action-kind">${esc(kindLabel)}</span><span class="action-title">${escUI(a.title)}<span class="action-arrow" aria-hidden="true">←</span></span><span class="action-description">${escUI(a.description)}</span>${workCounterHTML(a)}<span class="action-cost"><span>${icon('time')}${a.cost.time} ש׳</span>${a.cost.money||a.fundingUsed||a.crowdUsed||a.contractUsed?`<span>${icon('money')}${money(a.cost.money)}${a.fundingUsed||a.crowdUsed||a.contractUsed?' מהכיס':''}</span>`:''}${a.cost.energy?`<span>${icon('energy')}${a.cost.energy} אנרגיה</span>`:''}</span>${a.fundingUsed?`<span class="grant-offset">הקרן מכסה ${money(a.fundingUsed)} נוספים</span>`:''}${a.effects?.length?`<span class="action-effects">${a.effects.map(escUI).join(' · ')}</span>`:''}${a.crowdUsed?`<span class="grant-offset">מימון ההמונים מכסה ${money(a.crowdUsed)} נוספים</span>`:''}${forecastNotice}${crowdNotice?`<span class="fund-release-note">${esc(crowdNotice)}</span>`:''}${fundingNotice?`<span class="fund-release-note">${esc(fundingNotice)}</span>`:''}${hintHTML(a.id)}${a.contractUsed?`<span class="grant-offset">השותף מכסה ${money(a.contractUsed)} נוספים</span>`:''}${a.disabled&&a.reason?`<span class="action-reason">${escUI(a.reason)}</span>`:''}</button>`;
 }
 function focusActionPanel(){const panel=$('action-panel');panel.tabIndex=-1;panel.focus({preventScroll:true});panel.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}
-function navigateTo(id){ selected=id;feedback='';renderMap();renderPanel();focusActionPanel(); }
+function navigateTo(id){ selected=id;feedback='';renderMap();renderPanel();focusActionPanel();tutorial?.notify({type:'location',id}); }
 function fundingResultHTML(result){
  const approved=result.outcome==='approved';
  const label=({approved:'אושרה תמיכה',rejected:'לא אושר הפעם',withdrawn:'הבקשה נסגרה',expired:'תוקף הבקשה הסתיים'})[result.outcome]||'עדכון מהקרן';
@@ -270,6 +271,7 @@ function renderPanel(){
  $('action-panel').querySelectorAll('[data-next-place]').forEach(b=>b.addEventListener('click',()=>navigateTo(b.dataset.nextPlace)));
  $('action-panel').querySelector('[data-open-funds]')?.addEventListener('click',()=>{bankTab='funds';navigateTo('bank');});
  $('action-panel').querySelectorAll('[data-bank-tab]').forEach(b=>b.addEventListener('click',()=>{bankTab=b.dataset.bankTab;feedback='';renderPanel();}));
+ tutorial?.sync();
 }
 let chosenStoryGenre='drama';
 function storyLabel(film){return G.STORY_GENRES.find(g=>g.id===film.storyGenre)?.label||film.genre;}
@@ -340,8 +342,9 @@ function render(){
  $('end-week-button').disabled=retired||!!state.event||!!state.productionAlert;
  $('end-week-button').firstElementChild.textContent=cutLabel();
  $('sound-button').setAttribute('aria-pressed',String(!muted));$('sound-button').setAttribute('aria-label',muted?'הפעלת צלילים':'השתקת צלילים');
+ tutorial?.sync();
 }
-function perform(id,options){if(!started)return;const oldTier=G.getCareer?.(state).tier;const result=G.act(state,id,options);beep(result.ok);if(result.ok){feedback=result.message;save();render();const c=G.getCareer?.(state);if(c&&c.tier>oldTier)toast('דלת חדשה נפתחה: '+c.title+'. '+c.unlocks.slice(0,2).join(' · '));}else toast(result.message||'אי אפשר לבצע את הפעולה כרגע.');pendingStory();return result;}
+function perform(id,options){if(!started)return;const oldTier=G.getCareer?.(state).tier;const result=G.act(state,id,options);beep(result.ok);if(result.ok){feedback=result.message;save();render();const c=G.getCareer?.(state);if(c&&c.tier>oldTier)toast('דלת חדשה נפתחה: '+c.title+'. '+c.unlocks.slice(0,2).join(' · '));}else toast(result.message||'אי אפשר לבצע את הפעולה כרגע.');pendingStory();tutorial?.notify({type:'action',id,ok:result.ok});return result;}
 function openDialog(html,{locked=false,wide=false}={}){
  const d=$('game-dialog');d.classList.toggle('casting-dialog',wide);
  if(!d.open)dialogReturnFocus=document.activeElement;
@@ -350,8 +353,9 @@ function openDialog(html,{locked=false,wide=false}={}){
  if(!d.querySelector('#dialog-title')){const heading=d.querySelector('h2,.welcome-brand');if(heading)heading.id='dialog-title';}
  d.dataset.locked=String(locked);if(!d.open)d.showModal();
  d.querySelectorAll('[data-close]').forEach(button=>button.addEventListener('click',closeDialog));
+ tutorial?.sync();
 }
-function closeDialog(){const d=$('game-dialog');d.close();if(dialogReturnFocus?.isConnected)dialogReturnFocus.focus();}
+function closeDialog(){const d=$('game-dialog');d.close();if(dialogReturnFocus?.isConnected)dialogReturnFocus.focus();tutorial?.sync();}
 $('game-dialog').addEventListener('cancel',event=>{if($('game-dialog').dataset.locked==='true')event.preventDefault();});
 function welcome(isNew=false){
  const available=!isNew?saved:null;
@@ -370,13 +374,16 @@ function instructionsHTML(){
 function showChapterBrief(first=false){
  if(state.event||state.productionAlert||state.status!=='playing'){pendingStory();return;}
  const chapter=chapterInfo();
- openDialog(`<span class="dialog-eyebrow">פרק ${chapter.number} · רמת קושי: ${chapter.difficulty}</span><h2 id="dialog-title">${first?'נעים להכיר, '+esc(state.name)+'.':esc(chapter.title)}</h2><div class="chapter-mission"><strong>המשימה: ${escUI(chapter.goal)}</strong><p>לצידה משלימים את ארבעת היעדים. יש ${chapter.remaining} תקופות עבודה לפרק הזה. איתי מנסה להגיע לפניכם.</p><div class="brief-goals">${G.goals(state).map(g=>`<span>${esc(g.label)} <b>${g.id==='wealth'?money(g.target):g.target}</b></span>`).join('')}</div></div>${first?instructionsHTML():'<p>הכסף, הסרטים והנכסים ממשיכים איתכם. הפרק החדש מעלה את היעדים; אפשר לבחור סרט חדש כשההפקה הנוכחית מסתיימת.</p>'}<button class="primary-button" id="brief-start">${first?'הבנתי. מתחילים בבית':'אקשן. לפרק '+chapter.number} ←</button>`,{locked:true,wide:true});
+ openDialog(`<span class="dialog-eyebrow">פרק ${chapter.number} · רמת קושי: ${chapter.difficulty}</span><h2 id="dialog-title">${first?'נעים להכיר, '+esc(state.name)+'.':esc(chapter.title)}</h2><div class="chapter-mission"><strong>המשימה: ${escUI(chapter.goal)}</strong><p>לצידה משלימים את ארבעת היעדים. יש ${chapter.remaining} תקופות עבודה לפרק הזה. איתי מנסה להגיע לפניכם.</p><div class="brief-goals">${G.goals(state).map(g=>`<span>${esc(g.label)} <b>${g.id==='wealth'?money(g.target):g.target}</b></span>`).join('')}</div></div>${first?'<p>נכיר את המשחק יחד, צעד־צעד: נפתח סרט, ננסה משמרת ומנוחה, ונציץ בשאר האפשרויות. אלו פעולות אמיתיות במשחק שלכם, ואפשר לדלג בכל רגע.</p>':'<p>הכסף, הסרטים והנכסים ממשיכים איתכם. הפרק החדש מעלה את היעדים; אפשר לבחור סרט חדש כשההפקה הנוכחית מסתיימת.</p>'}<button class="primary-button" id="brief-start">${first?'מתחילים יחד — הדרכה קצרה':'אקשן. לפרק '+chapter.number} ←</button>${first?'<button class="secondary-button" id="brief-skip">אני מסתדר/ת — למשחק</button>':''}`,{locked:true,wide:true});
  const heading=$('dialog-title');heading.tabIndex=-1;heading.focus({preventScroll:true});$('game-dialog').scrollTop=0;
- $('brief-start').addEventListener('click',()=>{state.onboardingPending=false;save();closeDialog();navigateTo('home');});
+ const begin=guided=>{state.onboardingPending=false;save();closeDialog();navigateTo('home');if(guided)tutorial?.start();};
+ $('brief-start').addEventListener('click',()=>begin(first));
+ $('brief-skip')?.addEventListener('click',()=>begin(false));
 }
 function showHelp(){
- openDialog(`<button class="dialog-close" data-close aria-label="סגירה">×</button><span class="dialog-eyebrow">אפשר לחזור לכאן בכל רגע</span><h2 id="dialog-title">איך משחקים בחיים בסרט?</h2>${instructionsHTML()}<p class="life-fine-print">בתוך כל פרק יש כמה תקופות עבודה. 50 השעות מייצגות שבוע מפתח; קאט מדלג על השגרה שבין ההחלטות ומציג מראש בכמה חודשים מתקדמים. בהמשך נפתחים צוות מקצועי, קרנות, פסטיבלים וחיים מחוץ להפקה.</p><button class="primary-button" id="help-done">בחזרה לסט ←</button>`,{wide:true});
+ openDialog(`<button class="dialog-close" data-close aria-label="סגירה">×</button><span class="dialog-eyebrow">אפשר לחזור לכאן בכל רגע</span><h2 id="dialog-title">איך משחקים בחיים בסרט?</h2>${instructionsHTML()}<p class="life-fine-print">בתוך כל פרק יש כמה תקופות עבודה. 50 השעות מייצגות שבוע מפתח; קאט מדלג על השגרה שבין ההחלטות ומציג מראש בכמה חודשים מתקדמים. בהמשך נפתחים צוות מקצועי, קרנות, פסטיבלים וחיים מחוץ להפקה.</p><button class="primary-button" id="help-tour">לעבור יחד על המשחק, צעד־צעד ←</button><button class="secondary-button" id="help-done">בחזרה לסט</button>`,{wide:true});
  $('help-done').addEventListener('click',closeDialog);
+ $('help-tour').addEventListener('click',()=>{closeDialog();tutorial?.start();});
 }
 function showProductionSetback(){
  const a=state.productionAlert;if(!a)return;const good=a.kind==='breakthrough';
@@ -439,5 +446,9 @@ new ResizeObserver(entries=>document.documentElement.style.setProperty('--game-h
 // Asset upgrades are local and optional; the game remains usable without network access.
 // updateCityArtwork owns both the board image and the location-header crop.
 const pixelPeople=new Image();pixelPeople.onload=()=>document.body.classList.add('pixel-people-ready');pixelPeople.src='assets/characters.png';
+tutorial=window.FilmTutorial?.mount({
+ getContext:()=>({state,selected,started,progress:state.tutorial,actions:location=>G.getActions(state,location)}),
+ onProgress:progress=>{state.tutorial=progress;save();if(progress.status==='complete')toast('ההדרכה הושלמה. הסרט וההחלטות בידיים שלכם.');}
+});
 render();welcome();
 })();

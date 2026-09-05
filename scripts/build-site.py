@@ -6,7 +6,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / 'dist'
 FILES = (
-    'theme.js', 'themes.css',
+    'theme.js', 'themes.css', 'film-tutorial.js', 'tutorial.css',
     'film-network.js', 'film-workload.js', 'film-advice.js', 'encounters.css', 'assets/industry-encounters.png', 'index.html', 'film-industry.js', 'film-life.js', 'game-engine.js', 'game-ui.js',
     'game.css', 'career.css', 'life.css', 'chapters.css', 'film-stories.js', 'film-crowdfunding.js', 'film-local.js', 'film-events.js', 'assets/amir-portrait.png', 'assets/city-map.svg', 'assets/city-map.png',
     'assets/city-athens.png', 'assets/city-berlin.png', 'assets/city-london.png', 'assets/city-los-angeles.png',
