@@ -1,0 +1,109 @@
+{
+  "version": 2,
+  "characterId": "noa",
+  "name": "נועה עם בקשה בדרך",
+  "difficulty": "normal",
+  "week": 1,
+  "maxWeeks": 14,
+  "hours": 16,
+  "maxHours": 32,
+  "cash": 2210,
+  "debt": 800,
+  "energy": 57,
+  "happiness": 62,
+  "craft": 15,
+  "reputation": 8,
+  "contacts": 9,
+  "job": 0,
+  "location": "bank",
+  "films": [],
+  "project": {
+    "id": 1,
+    "grantBudget": 0,
+    "grantAwarded": 0,
+    "grantExpired": 0,
+    "dossier": 0,
+    "twist": null,
+    "dilemmaEligible": true,
+    "title": "האיש שתפס את האוטובוס",
+    "type": "doc",
+    "genre": "דוקו",
+    "stage": "script",
+    "quality": 12,
+    "budget": 50,
+    "startedWeek": 1
+  },
+  "nextProjectId": 2,
+  "funding": {
+    "application": {
+      "id": "1-1",
+      "projectId": 1,
+      "projectTitle": "האיש שתפס את האוטובוס",
+      "trackId": "development",
+      "title": "מענק פיתוח",
+      "fundName": "קרן ״עוד טיוטה״",
+      "amount": 400,
+      "submittedWeek": 1,
+      "dueWeek": 2,
+      "chance": 54,
+      "attempt": 1,
+      "quality": 12,
+      "craft": 15,
+      "contacts": 9,
+      "stage": "script",
+      "dossier": 0
+    },
+    "history": []
+  },
+  "assets": [],
+  "event": null,
+  "log": [
+    {
+      "week": 1,
+      "text": "להגיש: מענק פיתוח — 400 ₪ לתקציב הסרט בלבד · 54% סיכוי לאישור · תשובה בעוד 1 שבוע · חלון הגשה עד שבוע 2"
+    },
+    {
+      "week": 1,
+      "text": "קרן ״עוד טיוטה״ קיבלה את הבקשה ל״האיש שתפס את האוטובוס״. תשובה בשבוע 2. סיכוי האישור נקבע בעת ההגשה: 54%."
+    },
+    {
+      "week": 1,
+      "text": "נולד ״האיש שתפס את האוטובוס״. יש רעיון; עכשיו צריך להפוך אותו לתסריט שאפשר לצלם. — מתחילים תסריט · צילום בסיסי: 430 ₪ · +2 מיומנות"
+    },
+    {
+      "week": 1,
+      "text": "משמרת: רץ/ת הפקה — +460 ₪ · +1 מיומנות · +1 קשרים"
+    },
+    {
+      "week": 1,
+      "text": "ברוכים הבאים לתעשייה. יש לך 32 שעות בשבוע, חלום גדול, וחוב קטן שכבר מאמין בעצמו."
+    }
+  ],
+  "rival": {
+    "name": "איתי",
+    "progress": 0,
+    "quote": "״היום אני על הסט. הם עוד לא יודעים באיזה תפקיד.״",
+    "location": "set"
+  },
+  "status": "playing",
+  "ending": "",
+  "weeklySummary": null,
+  "rng": 2175469510,
+  "used": {
+    "work": 1,
+    "course": 0,
+    "practice": 0,
+    "network": 0,
+    "mingle": 0,
+    "family": 0,
+    "fun": 0,
+    "meal": 0,
+    "borrow": 0,
+    "pitch": 0
+  },
+  "weeklyTotals": {
+    "income": 460,
+    "expenses": 50
+  },
+  "crisisWeeks": 0
+}

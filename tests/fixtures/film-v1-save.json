@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "name": "קובי משמירת V1",
+  "difficulty": "normal",
+  "week": 2,
+  "maxWeeks": 14,
+  "hours": 32,
+  "maxHours": 32,
+  "cash": 1800,
+  "debt": 832,
+  "energy": 100,
+  "happiness": 61,
+  "craft": 19,
+  "reputation": 8,
+  "contacts": 9,
+  "job": 0,
+  "location": "home",
+  "films": [],
+  "project": {
+    "title": "האיש שתפס את האוטובוס",
+    "type": "doc",
+    "genre": "דוקו",
+    "stage": "shoot",
+    "quality": 24,
+    "budget": 50,
+    "startedWeek": 1
+  },
+  "assets": [],
+  "event": {
+    "title": "הפסטיבל רוצה אותך. ואת דמי ההרשמה.",
+    "body": "פסטיבל ״עדשת הנגב״ פותח מסלול חדש. בטופס יש יותר שדות מאשר בנגב.",
+    "options": [
+      {
+        "label": "להירשם ולפגוש אנשים",
+        "description": "−180 ₪, +7 מוניטין, +5 קשרים.",
+        "disabled": false,
+        "reason": "",
+        "effects": {
+          "cash": -180,
+          "reputation": 7,
+          "contacts": 5
+        }
+      },
+      {
+        "label": "לארגן הקרנה בסלון",
+        "description": "+5 אושר, +2 מוניטין.",
+        "disabled": false,
+        "reason": "",
+        "effects": {
+          "happiness": 5,
+          "reputation": 2
+        }
+      }
+    ]
+  },
+  "log": [
+    {
+      "week": 1,
+      "text": "סוף שבוע 1: מחיה: 410 ₪ · ריבית: 32 ₪. שבוע חדש, קפה חדש."
+    },
+    {
+      "week": 1,
+      "text": "שנ״צ בלי רגשות אשמה — +28 אנרגיה · +4 אושר"
+    },
+    {
+      "week": 1,
+      "text": "התסריט של ״האיש שתפס את האוטובוס״ נסגר. הגיע הזמן לאסוף צוות וללחוץ רקורד. — התסריט מוכן לצילום · +12 איכות · +4 מיומנות"
+    },
+    {
+      "week": 1,
+      "text": "נולד ״האיש שתפס את האוטובוס״. יש רעיון; עכשיו צריך להפוך אותו לתסריט שאפשר לצלם. — מתחילים תסריט · צילום בסיסי: 430 ₪ · +2 מיומנות"
+    },
+    {
+      "week": 1,
+      "text": "משמרת: רץ/ת הפקה — +460 ₪ · +1 מיומנות · +1 קשרים"
+    },
+    {
+      "week": 1,
+      "text": "ברוכים הבאים לתעשייה. יש לך 32 שעות בשבוע, חלום גדול, וחוב קטן שכבר מאמין בעצמו."
+    }
+  ],
+  "rival": {
+    "name": "איתי",
+    "progress": 7,
+    "quote": "״אני בסינמטק. התג כבר עושה חצי מהנטוורקינג.״",
+    "location": "festival"
+  },
+  "status": "playing",
+  "ending": "",
+  "weeklySummary": {
+    "income": 460,
+    "expenses": 492,
+    "net": -32,
+    "text": "מחיה: 410 ₪ · ריבית: 32 ₪. שבוע חדש, קפה חדש."
+  },
+  "rng": 2038809190,
+  "used": {
+    "work": 0,
+    "course": 0,
+    "practice": 0,
+    "network": 0,
+    "mingle": 0,
+    "family": 0,
+    "fun": 0,
+    "meal": 0,
+    "borrow": 0,
+    "pitch": 0
+  },
+  "weeklyTotals": {
+    "income": 0,
+    "expenses": 0
+  },
+  "crisisWeeks": 0
+}

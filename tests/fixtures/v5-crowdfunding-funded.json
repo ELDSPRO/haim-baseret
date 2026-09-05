@@ -1,0 +1,462 @@
+{
+  "version": 5,
+  "characterId": "kobi",
+  "name": "קובי",
+  "difficulty": "calm",
+  "season": 1,
+  "seasonStartedWeek": 1,
+  "seasonFilmBase": 0,
+  "week": 3,
+  "maxWeeks": 20,
+  "hours": 50,
+  "maxHours": 50,
+  "cash": 1580,
+  "debt": 841,
+  "energy": 100,
+  "happiness": 52,
+  "craft": 14,
+  "reputation": 8,
+  "contacts": 8,
+  "job": 0,
+  "location": "home",
+  "films": [],
+  "project": {
+    "workload": {
+      "shootDone": 0,
+      "editDone": 0,
+      "shootMode": null,
+      "editMode": null,
+      "shootCraft": null,
+      "editCraft": null
+    },
+    "id": 1,
+    "grantBudget": 0,
+    "grantAwarded": 0,
+    "grantExpired": 0,
+    "dossier": 0,
+    "twist": null,
+    "setbacks": [],
+    "breakthroughs": [],
+    "productionIncome": 0,
+    "crew": [],
+    "dilemmaEligible": true,
+    "title": "איש לא הזמין מונית",
+    "storyGenre": "thriller",
+    "pitch": "נהגת אוספת נוסע לכתובת שלה עצמה, והוא יודע בדיוק מה היא מסתירה.",
+    "type": "short",
+    "genre": "דרמה קצרה",
+    "stage": "script",
+    "quality": 14,
+    "budget": 240,
+    "startedWeek": 1,
+    "createdQuarter": 0,
+    "crowdfunding": {
+      "startedWeek": 1,
+      "dueWeek": 3,
+      "target": 600,
+      "contactsAtLaunch": 8,
+      "reputationAtLaunch": 8,
+      "qualityAtLaunch": 14,
+      "promoted": false,
+      "roll": 23.602830641902983,
+      "status": "funded",
+      "gross": 600,
+      "fee": 48,
+      "rewards": 72,
+      "awarded": 480,
+      "balance": 480,
+      "spent": 0,
+      "expired": 0,
+      "resolvedWeek": 3,
+      "chance": 37
+    }
+  },
+  "nextProjectId": 2,
+  "funding": {
+    "application": null,
+    "history": []
+  },
+  "assets": [],
+  "event": null,
+  "productionAlert": null,
+  "log": [
+    {
+      "week": 3,
+      "text": "הקמפיין של ״איש לא הזמין מונית״ הגיע ליעד! אחרי עמלות ותשורות נוספו 480 ₪ לתקציב הסרט."
+    },
+    {
+      "week": 2,
+      "text": "סוף שבוע 2: מחיה: 330 ₪ · ריבית: 21 ₪. שבוע המפתח הסתיים בתוך 3 חודשי הפקה; יתר התקופה היא שגרה מאוזנת."
+    },
+    {
+      "week": 2,
+      "text": "לקחת את השליחות בתשלום — +160 ₪, −6 אנרגיה."
+    },
+    {
+      "week": 1,
+      "text": "סוף שבוע 1: מחיה: 330 ₪ · ריבית: 20 ₪. שבוע המפתח הסתיים בתוך 3 חודשי הפקה; יתר התקופה היא שגרה מאוזנת."
+    },
+    {
+      "week": 1,
+      "text": "קמפיין מימון המונים — יעד: 600 ₪ · נטו לסרט בהצלחה: 480 ₪ · תוצאה בעוד שתי תקופות · 37% סיכוי"
+    },
+    {
+      "week": 1,
+      "text": "נולד ״איש לא הזמין מונית״. יש רעיון; עכשיו צריך להפוך אותו לתסריט שאפשר לצלם. — מתחילים תסריט · 2 ימי צילום · 3 ימי עריכה · צילום בסיסי: 650 ₪ · +2 מיומנות"
+    },
+    {
+      "week": 1,
+      "text": "ברוכים הבאים לתעשייה. יש לך 50 שעות בסבב מפתח בתוך כל רבעון. יתר התקופה היא שגרה מאוזנת, בלי 13 חיובים אוטומטיים. מתחילים בגיל 23, עם חלום וחוב קטן."
+    }
+  ],
+  "rival": {
+    "name": "איתי",
+    "rng": 2007144851,
+    "progress": 36,
+    "quote": "״בסבב הזה: להתאושש לפני ההפקה הבאה. הפעם זה ביומן, לא רק בסטורי.״",
+    "location": "cafe",
+    "cash": 1240,
+    "debt": 0,
+    "craft": 30,
+    "reputation": 9,
+    "contacts": 10,
+    "happiness": 66,
+    "films": [],
+    "project": {
+      "title": "עד שייגמרו הזיתים",
+      "storyGenre": "drama",
+      "pitch": "אב ובן מחכים לקונה של המשק, וממשיכים למסוק כאילו אין שום דבר למכור.",
+      "type": "short",
+      "stage": "release",
+      "quality": 57,
+      "budget": 510
+    },
+    "history": [
+      {
+        "week": 1,
+        "royalties": 0,
+        "debtRepaid": 820,
+        "financeText": "איתי החזיר 820 ₪ מקרן החוב. זהו החזר הלוואה, לא הוצאה נוספת.",
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 560 ₪.",
+            "cashDelta": 560,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״עד שייגמרו הזיתים״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 3,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 560,
+          "expenses": 430,
+          "cash": -670,
+          "wealth": 130,
+          "reputation": 0,
+          "craft": 5,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 29,
+        "scoreAfter": 33,
+        "gapBefore": 0,
+        "gapAfter": -6,
+        "gapChange": -6,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט + סדנת בימוי ותרגול",
+        "dueWeek": 3
+      },
+      {
+        "week": 2,
+        "royalties": 0,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 560 ₪.",
+            "cashDelta": 560,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״עד שייגמרו הזיתים״ בעלות 430 ₪. האיכות כרגע 57.",
+            "cashDelta": -430,
+            "craftDelta": 4,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 560,
+          "expenses": 850,
+          "cash": -290,
+          "wealth": -290,
+          "reputation": 1,
+          "craft": 13,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 33,
+        "scoreAfter": 36,
+        "gapBefore": -6,
+        "gapAfter": -11,
+        "gapChange": -5,
+        "nextPlan": "להתאושש לפני ההפקה הבאה: משמרת צילום בתשלום + ערב עם חברים מחוץ לתעשייה + עריכה ובכורה לסרט",
+        "dueWeek": 4
+      }
+    ],
+    "weekStartGap": -11,
+    "seasonFilmBase": 0,
+    "initializedWeek": 1,
+    "lastReportWeek": 2,
+    "nextPlan": "להתאושש לפני ההפקה הבאה: משמרת צילום בתשלום + ערב עם חברים מחוץ לתעשייה + עריכה ובכורה לסרט",
+    "dueWeek": 4,
+    "plan": {
+      "week": 3,
+      "goal": "להתאושש לפני ההפקה הבאה",
+      "actions": [
+        {
+          "id": "work",
+          "label": "משמרת צילום בתשלום"
+        },
+        {
+          "id": "rest",
+          "label": "ערב עם חברים מחוץ לתעשייה"
+        },
+        {
+          "id": "release",
+          "label": "עריכה ובכורה לסרט"
+        }
+      ]
+    }
+  },
+  "status": "playing",
+  "ending": "",
+  "weeklySummary": {
+    "income": 160,
+    "expenses": 351,
+    "net": -191,
+    "royalties": 0,
+    "rent": 0,
+    "text": "מחיה: 330 ₪ · ריבית: 21 ₪. שבוע המפתח הסתיים בתוך 3 חודשי הפקה; יתר התקופה היא שגרה מאוזנת.",
+    "fundingResults": [],
+    "festivalResults": [],
+    "rivalReport": {
+      "week": 2,
+      "royalties": 0,
+      "debtRepaid": 0,
+      "financeText": "",
+      "goal": "לסיים את הצילומים",
+      "actions": [
+        {
+          "id": "work",
+          "label": "משמרת צילום בתשלום",
+          "text": "איתי צילם משמרת והכניס 560 ₪.",
+          "cashDelta": 560,
+          "craftDelta": 2,
+          "reputationDelta": 0,
+          "contactsDelta": 1
+        },
+        {
+          "id": "shoot",
+          "label": "יום צילום לסרט",
+          "text": "איתי צילם את ״עד שייגמרו הזיתים״ בעלות 430 ₪. האיכות כרגע 57.",
+          "cashDelta": -430,
+          "craftDelta": 4,
+          "reputationDelta": 0,
+          "contactsDelta": 0
+        },
+        {
+          "id": "learn",
+          "label": "סדנת בימוי ותרגול",
+          "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+          "cashDelta": -90,
+          "craftDelta": 7,
+          "reputationDelta": 1,
+          "contactsDelta": 0
+        }
+      ],
+      "delta": {
+        "income": 560,
+        "expenses": 850,
+        "cash": -290,
+        "wealth": -290,
+        "reputation": 1,
+        "craft": 13,
+        "contacts": 1,
+        "happiness": -5,
+        "films": 0
+      },
+      "scoreBefore": 33,
+      "scoreAfter": 36,
+      "gapBefore": -6,
+      "gapAfter": -11,
+      "gapChange": -5,
+      "nextPlan": "להתאושש לפני ההפקה הבאה: משמרת צילום בתשלום + ערב עם חברים מחוץ לתעשייה + עריכה ובכורה לסרט",
+      "dueWeek": 4
+    },
+    "lifeReport": {
+      "quarter": 2,
+      "durationQuarters": 1,
+      "headline": "נטפאוז: סדרה ישראלית מפתיעה בטופ 10 (+12% בסבב).",
+      "changes": [
+        {
+          "id": "takela",
+          "title": "טייקסלה",
+          "change": 9.4
+        },
+        {
+          "id": "netpause",
+          "title": "נטפאוז",
+          "change": 12
+        },
+        {
+          "id": "pomela",
+          "title": "פומלה",
+          "change": 5.6
+        }
+      ],
+      "valueChange": 0,
+      "relationshipChange": 0
+    },
+    "crowdfundingResult": {
+      "status": "funded",
+      "title": "איש לא הזמין מונית",
+      "text": "הקמפיין של ״איש לא הזמין מונית״ הגיע ליעד! אחרי עמלות ותשורות נוספו 480 ₪ לתקציב הסרט.",
+      "awarded": 480
+    }
+  },
+  "rng": 3025432647,
+  "used": {
+    "overtime": 0,
+    "work": 0,
+    "course": 0,
+    "practice": 0,
+    "network": 0,
+    "mingle": 0,
+    "family": 0,
+    "fun": 0,
+    "meal": 0,
+    "borrow": 0,
+    "pitch": 0,
+    "wedding": 0,
+    "ad": 0,
+    "lecture": 0,
+    "teach_masterclass": 0,
+    "jury": 0
+  },
+  "weeklyTotals": {
+    "income": 0,
+    "expenses": 0
+  },
+  "crisisWeeks": 0,
+  "life": {
+    "quarters": 2,
+    "chapterProjectId": null,
+    "cityId": "tel_aviv",
+    "retired": false,
+    "retirementSummary": "",
+    "productionLoad": 0,
+    "usedCityOffer": false,
+    "usedCityLeisure": false,
+    "eventHistory": [
+      "tel_aviv_cable_delivery"
+    ],
+    "chaptersWon": 0,
+    "chaptersCompleted": 0,
+    "lastRecordedChapter": 0,
+    "market": {
+      "rng": 3173809130,
+      "quarter": 2,
+      "prices": {
+        "takela": 140,
+        "netpause": 112,
+        "pomela": 151
+      },
+      "previousPrices": {
+        "takela": 128,
+        "netpause": 100,
+        "pomela": 143
+      },
+      "holdings": {
+        "takela": 0,
+        "netpause": 0,
+        "pomela": 0
+      },
+      "costBasis": {
+        "takela": 0,
+        "netpause": 0,
+        "pomela": 0
+      },
+      "realizedProfit": 0,
+      "trades": 0,
+      "headline": "נטפאוז: סדרה ישראלית מפתיעה בטופ 10 (+12% בסבב)."
+    },
+    "relationship": {
+      "partnerId": null,
+      "closeness": 0,
+      "usedDate": false
+    }
+  },
+  "locationBoards": {
+    "week": 3,
+    "rng": 3757843552,
+    "cafe": {
+      "offerIds": [
+        "rough_cut",
+        "last_minute_clip",
+        "roof_escape"
+      ],
+      "usedIds": []
+    },
+    "gear": {
+      "offerIds": [
+        "crew_cleanup",
+        "color_slot",
+        "camera_bargain"
+      ],
+      "usedIds": []
+    }
+  },
+  "festivalCircuit": {
+    "rng": 3144134278,
+    "pending": [],
+    "history": []
+  }
+}

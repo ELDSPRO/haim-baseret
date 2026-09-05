@@ -1,0 +1,1213 @@
+{
+  "version": 3,
+  "characterId": "kobi",
+  "name": "הבוט עם היומן",
+  "difficulty": "normal",
+  "season": 2,
+  "seasonStartedWeek": 8,
+  "seasonFilmBase": 1,
+  "week": 15,
+  "maxWeeks": 28,
+  "hours": 4,
+  "maxHours": 32,
+  "cash": 14451,
+  "debt": 0,
+  "energy": 33,
+  "happiness": 100,
+  "craft": 100,
+  "reputation": 100,
+  "contacts": 88,
+  "job": 3,
+  "location": "home",
+  "films": [
+    {
+      "id": 1,
+      "grantBudget": 0,
+      "grantAwarded": 0,
+      "grantExpired": 0,
+      "dossier": 0,
+      "twist": {
+        "id": "doc_neighbor",
+        "choice": 0,
+        "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+      },
+      "dilemmaEligible": true,
+      "title": "ועד הבית: הסיפור האמיתי",
+      "type": "doc",
+      "genre": "דוקו",
+      "stage": "released",
+      "quality": 76,
+      "budget": 926,
+      "startedWeek": 2,
+      "shootStyle": "lean",
+      "review": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית.",
+      "releasedWeek": 3,
+      "route": "commercial",
+      "revenue": 1753,
+      "royalty": 81
+    },
+    {
+      "id": 2,
+      "grantBudget": 0,
+      "grantAwarded": 0,
+      "grantExpired": 0,
+      "dossier": 0,
+      "twist": {
+        "id": "full_generator",
+        "choice": 0,
+        "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+      },
+      "dilemmaEligible": true,
+      "title": "המרפסת של מחר",
+      "type": "short",
+      "genre": "דרמה קצרה",
+      "stage": "released",
+      "quality": 100,
+      "budget": 1495,
+      "startedWeek": 9,
+      "shootStyle": "full",
+      "review": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית.",
+      "releasedWeek": 9,
+      "route": "festival",
+      "revenue": 1278,
+      "royalty": 45
+    },
+    {
+      "id": 3,
+      "grantBudget": 0,
+      "grantAwarded": 0,
+      "grantExpired": 0,
+      "dossier": 0,
+      "twist": {
+        "id": "full_generator",
+        "choice": 0,
+        "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+      },
+      "dilemmaEligible": true,
+      "title": "ארבעה אחים ושולחן",
+      "type": "feature",
+      "genre": "פיצ׳ר",
+      "stage": "released",
+      "quality": 100,
+      "budget": 5433,
+      "startedWeek": 9,
+      "shootStyle": "full",
+      "review": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית.",
+      "releasedWeek": 11,
+      "route": "commercial",
+      "revenue": 10640,
+      "royalty": 95,
+      "boxOfficeSuccess": true,
+      "forecast": {
+        "fee": 600,
+        "riskChance": 12,
+        "revenueMin": 3405,
+        "revenueMax": 10640,
+        "successRevenue": 10640,
+        "flopRevenue": 3405,
+        "expectedRevenue": 9772
+      }
+    },
+    {
+      "id": 4,
+      "grantBudget": 0,
+      "grantAwarded": 0,
+      "grantExpired": 0,
+      "dossier": 0,
+      "twist": {
+        "id": "full_generator",
+        "choice": 0,
+        "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+      },
+      "dilemmaEligible": true,
+      "title": "ארבעה אחים ושולחן",
+      "type": "feature",
+      "genre": "פיצ׳ר",
+      "stage": "released",
+      "quality": 100,
+      "budget": 5433,
+      "startedWeek": 11,
+      "shootStyle": "full",
+      "review": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית.",
+      "releasedWeek": 13,
+      "route": "festival",
+      "revenue": 5396,
+      "royalty": 45,
+      "boxOfficeSuccess": true,
+      "forecast": {
+        "fee": 600,
+        "riskChance": 8,
+        "revenueMin": 1727,
+        "revenueMax": 5396,
+        "successRevenue": 5396,
+        "flopRevenue": 1727,
+        "expectedRevenue": 5102
+      }
+    }
+  ],
+  "project": {
+    "id": 5,
+    "grantBudget": 0,
+    "grantAwarded": 0,
+    "grantExpired": 0,
+    "dossier": 0,
+    "twist": {
+      "id": "full_generator",
+      "choice": 0,
+      "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+    },
+    "dilemmaEligible": true,
+    "title": "הקיץ שבו כולם באו",
+    "type": "blockbuster",
+    "genre": "שובר קופות",
+    "stage": "release",
+    "quality": 100,
+    "budget": 10803,
+    "startedWeek": 13,
+    "shootStyle": "full"
+  },
+  "nextProjectId": 6,
+  "funding": {
+    "application": null,
+    "history": []
+  },
+  "assets": [
+    "bike",
+    "desk",
+    "camera",
+    "laptop"
+  ],
+  "event": null,
+  "log": [
+    {
+      "week": 15,
+      "text": "ארוחה עם אנשים מחוץ לתעשייה — +14 אושר · +10 אנרגיה"
+    },
+    {
+      "week": 15,
+      "text": "להנחות כיתת אמן — +1,250 ₪ · +4 מוניטין · +2 מיומנות"
+    },
+    {
+      "week": 15,
+      "text": "העריכה של ״הקיץ שבו כולם באו״ נעולה. הבכורה מחכה: יוקרת הפסטיבלים או הכנסות מהקהל? — מוכן להפצה · +42 איכות · +5 מיומנות"
+    },
+    {
+      "week": 15,
+      "text": "לביים פרסומת — +1,650 ₪ · +2 מיומנות · +2 קשרים · +2 מוניטין · -7 אושר"
+    },
+    {
+      "week": 15,
+      "text": "לשלוח גרסה ולעמוד על התשלום — +250 ₪, −5 אנרגיה."
+    },
+    {
+      "week": 14,
+      "text": "סוף שבוע 14: מחיה: 410 ₪ · ריבית: 0 ₪ · תמלוגים: 266 ₪. שבוע חדש, קפה חדש."
+    },
+    {
+      "week": 14,
+      "text": "לאכול משהו שאינו קפה — +24 אנרגיה · +3 אושר"
+    },
+    {
+      "week": 14,
+      "text": "לשפוט בפסטיבל עולמי — +1,900 ₪ · +5 מוניטין · +4 קשרים · +6 אושר"
+    },
+    {
+      "week": 14,
+      "text": "לאכול משהו שאינו קפה — +24 אנרגיה · +3 אושר"
+    },
+    {
+      "week": 14,
+      "text": "להרצות על הסרט שלך — +720 ₪ · +3 מוניטין · +3 אושר"
+    },
+    {
+      "week": 14,
+      "text": "ארוחה עם אנשים מחוץ לתעשייה — +14 אושר · +10 אנרגיה"
+    },
+    {
+      "week": 14,
+      "text": "להנחות כיתת אמן — +1,250 ₪ · +4 מוניטין · +2 מיומנות"
+    },
+    {
+      "week": 14,
+      "text": "לביים פרסומת — +1,650 ₪ · +2 מיומנות · +2 קשרים · +2 מוניטין · -7 אושר"
+    },
+    {
+      "week": 14,
+      "text": "לארגן הקרנה בסלון — +5 אושר, +2 מוניטין."
+    },
+    {
+      "week": 13,
+      "text": "סוף שבוע 13: מחיה: 410 ₪ · ריבית: 0 ₪ · תמלוגים: 266 ₪. שבוע חדש, קפה חדש."
+    },
+    {
+      "week": 13,
+      "text": "ארוחה עם אנשים מחוץ לתעשייה — +14 אושר · +10 אנרגיה"
+    },
+    {
+      "week": 13,
+      "text": "להזמין הקלטת דיאלוג מחדש — +8 איכות · −180 ₪ במזומן"
+    },
+    {
+      "week": 13,
+      "text": "״הקיץ שבו כולם באו״ צולם. כל החומרים מחכים בחדר העריכה, כולל שלוש דקות של מכסה עדשה. — עוברים לעריכה · +45 איכות · +5 מיומנות · דילמה מהסט מחכה להחלטה שלך"
+    },
+    {
+      "week": 13,
+      "text": "התסריט של ״הקיץ שבו כולם באו״ נסגר. הגיע הזמן לאסוף צוות וללחוץ רקורד. — התסריט מוכן לצילום · +12 איכות · +4 מיומנות"
+    },
+    {
+      "week": 13,
+      "text": "נולד ״הקיץ שבו כולם באו״. יש רעיון; עכשיו צריך להפוך אותו לתסריט שאפשר לצלם. — מתחילים תסריט · צילום בסיסי: 11,000 ₪ · +2 מיומנות"
+    },
+    {
+      "week": 13,
+      "text": "״ארבעה אחים ושולחן״ יצא לבכורה בפסטיבל. מישהו בשורה השלישית אפילו מחא כפיים ראשון. איכות הסרט: 100/100. הבכורה הצליחה: 5,396 ₪ הכנסות בפועל. המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית. — בהצלחה: 5,396 ₪ · בכישלון מסחרי: 1,727 ₪ · 8% סיכון לכישלון מסחרי · בהצלחה +50 מוניטין; בכישלון רק 23 · תמלוגים: 16 ₪ עד 45 ₪ בשבוע · בכישלון: −8 אושר"
+    },
+    {
+      "week": 13,
+      "text": "הבכורה עמדה בציפיות. הכנסות בפועל: 5,396 ₪, תקציב כולל: 5,433 ₪."
+    },
+    {
+      "week": 12,
+      "text": "סוף שבוע 12: מחיה: 410 ₪ · ריבית: 0 ₪ · תמלוגים: 221 ₪. שבוע חדש, קפה חדש."
+    },
+    {
+      "week": 12,
+      "text": "לאכול משהו שאינו קפה — +24 אנרגיה · +3 אושר"
+    },
+    {
+      "week": 12,
+      "text": "העריכה של ״ארבעה אחים ושולחן״ נעולה. הבכורה מחכה: יוקרת הפסטיבלים או הכנסות מהקהל? — מוכן להפצה · +42 איכות · +5 מיומנות"
+    },
+    {
+      "week": 12,
+      "text": "ארוחה עם אנשים מחוץ לתעשייה — +14 אושר · +10 אנרגיה"
+    },
+    {
+      "week": 12,
+      "text": "להזמין הקלטת דיאלוג מחדש — +8 איכות · −180 ₪ במזומן"
+    },
+    {
+      "week": 12,
+      "text": "״ארבעה אחים ושולחן״ צולם. כל החומרים מחכים בחדר העריכה, כולל שלוש דקות של מכסה עדשה. — עוברים לעריכה · +45 איכות · +5 מיומנות · דילמה מהסט מחכה להחלטה שלך"
+    },
+    {
+      "week": 12,
+      "text": "התסריט של ״ארבעה אחים ושולחן״ נסגר. הגיע הזמן לאסוף צוות וללחוץ רקורד. — התסריט מוכן לצילום · +12 איכות · +4 מיומנות"
+    },
+    {
+      "week": 12,
+      "text": "לבקש תשלום כמו בן אדם — +180 ₪, +2 מוניטין."
+    },
+    {
+      "week": 11,
+      "text": "סוף שבוע 11: מחיה: 410 ₪ · ריבית: 0 ₪ · תמלוגים: 221 ₪. שבוע חדש, קפה חדש."
+    },
+    {
+      "week": 11,
+      "text": "נולד ״ארבעה אחים ושולחן״. יש רעיון; עכשיו צריך להפוך אותו לתסריט שאפשר לצלם. — מתחילים תסריט · צילום בסיסי: 4,200 ₪ · +2 מיומנות"
+    },
+    {
+      "week": 11,
+      "text": "״ארבעה אחים ושולחן״ יצא לקהל. עכשיו אפשר לשלוח למשפחה קישור אמיתי. איכות הסרט: 100/100. הבכורה הצליחה: 10,640 ₪ הכנסות בפועל. המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית. — בהצלחה: 10,640 ₪ · בכישלון מסחרי: 3,405 ₪ · 12% סיכון לכישלון מסחרי · בהצלחה +26 מוניטין; בכישלון רק 12 · תמלוגים: 33 ₪ עד 95 ₪ בשבוע · בכישלון: −8 אושר"
+    },
+    {
+      "week": 11,
+      "text": "הבכורה עמדה בציפיות. הכנסות בפועל: 10,640 ₪, תקציב כולל: 5,433 ₪."
+    },
+    {
+      "week": 11,
+      "text": "לאכול משהו שאינו קפה — +24 אנרגיה · +3 אושר"
+    },
+    {
+      "week": 11,
+      "text": "ארוחה עם אנשים מחוץ לתעשייה — +14 אושר · +10 אנרגיה"
+    },
+    {
+      "week": 11,
+      "text": "לביים פרסומת — +1,650 ₪ · +2 מיומנות · +2 קשרים · +2 מוניטין · -7 אושר"
+    },
+    {
+      "week": 11,
+      "text": "העריכה של ״ארבעה אחים ושולחן״ נעולה. הבכורה מחכה: יוקרת הפסטיבלים או הכנסות מהקהל? — מוכן להפצה · +42 איכות · +5 מיומנות"
+    },
+    {
+      "week": 10,
+      "text": "סוף שבוע 10: מחיה: 410 ₪ · ריבית: 0 ₪ · תמלוגים: 126 ₪. שבוע חדש, קפה חדש."
+    },
+    {
+      "week": 10,
+      "text": "לביים פרסומת — +1,650 ₪ · +2 מיומנות · +2 קשרים · +2 מוניטין · -7 אושר"
+    },
+    {
+      "week": 10,
+      "text": "לאכול משהו שאינו קפה — +24 אנרגיה · +3 אושר"
+    },
+    {
+      "week": 10,
+      "text": "ארוחה עם אנשים מחוץ לתעשייה — +14 אושר · +10 אנרגיה"
+    },
+    {
+      "week": 10,
+      "text": "להזמין הקלטת דיאלוג מחדש — +8 איכות · −180 ₪ במזומן"
+    },
+    {
+      "week": 10,
+      "text": "״ארבעה אחים ושולחן״ צולם. כל החומרים מחכים בחדר העריכה, כולל שלוש דקות של מכסה עדשה. — עוברים לעריכה · +45 איכות · +5 מיומנות · דילמה מהסט מחכה להחלטה שלך"
+    },
+    {
+      "week": 10,
+      "text": "התסריט של ״ארבעה אחים ושולחן״ נסגר. הגיע הזמן לאסוף צוות וללחוץ רקורד. — התסריט מוכן לצילום · +12 איכות · +4 מיומנות"
+    },
+    {
+      "week": 9,
+      "text": "סוף שבוע 9: מחיה: 410 ₪ · ריבית: 0 ₪ · תמלוגים: 126 ₪. שבוע חדש, קפה חדש."
+    },
+    {
+      "week": 9,
+      "text": "נולד ״ארבעה אחים ושולחן״. יש רעיון; עכשיו צריך להפוך אותו לתסריט שאפשר לצלם. — מתחילים תסריט · צילום בסיסי: 4,200 ₪ · +2 מיומנות"
+    },
+    {
+      "week": 9,
+      "text": "״המרפסת של מחר״ יצא לבכורה בפסטיבל. מישהו בשורה השלישית אפילו מחא כפיים ראשון. איכות הסרט: 100/100. המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית. — +1,278 ₪ הכנסות · +36 מוניטין · +12 אושר · 45 ₪ תמלוגים בשבוע"
+    },
+    {
+      "week": 9,
+      "text": "העריכה של ״המרפסת של מחר״ נעולה. הבכורה מחכה: יוקרת הפסטיבלים או הכנסות מהקהל? — מוכן להפצה · +42 איכות · +5 מיומנות"
+    },
+    {
+      "week": 9,
+      "text": "להזמין הקלטת דיאלוג מחדש — +8 איכות · −180 ₪ במזומן"
+    }
+  ],
+  "rival": {
+    "name": "איתי",
+    "rng": 3358262425,
+    "progress": 87,
+    "quote": "״השבוע: להתחיל סרט חדש. הפעם זה ביומן, לא רק בסטורי.״",
+    "location": "cafe",
+    "cash": 13511,
+    "debt": 1394,
+    "craft": 100,
+    "reputation": 75,
+    "contacts": 28,
+    "happiness": 81,
+    "films": [
+      {
+        "title": "הדירה שבין הטייקים",
+        "type": "short",
+        "quality": 65,
+        "route": "commercial",
+        "budget": 730,
+        "revenue": 1390,
+        "royalty": 34,
+        "releasedWeek": 3
+      },
+      {
+        "title": "מחר נסדר את זה",
+        "type": "short",
+        "quality": 71,
+        "route": "commercial",
+        "budget": 730,
+        "revenue": 1486,
+        "royalty": 36,
+        "releasedWeek": 6
+      },
+      {
+        "title": "הדירה שבין הטייקים",
+        "type": "short",
+        "quality": 86,
+        "route": "commercial",
+        "budget": 730,
+        "revenue": 1726,
+        "royalty": 40,
+        "releasedWeek": 9
+      },
+      {
+        "title": "הדירה שבין הטייקים",
+        "type": "feature",
+        "quality": 90,
+        "route": "commercial",
+        "budget": 3100,
+        "revenue": 1905,
+        "royalty": 41,
+        "releasedWeek": 13
+      }
+    ],
+    "project": null,
+    "history": [
+      {
+        "week": 1,
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 560 ₪.",
+            "cashDelta": 560,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״הדירה שבין הטייקים״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 3,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 560,
+          "expenses": 522,
+          "cash": 70,
+          "wealth": 38,
+          "reputation": 0,
+          "craft": 5,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 23,
+        "scoreAfter": 27,
+        "gapBefore": 0,
+        "gapAfter": 2,
+        "gapChange": 2,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט + ערב עם חברים מחוץ לתעשייה",
+        "dueWeek": 3
+      },
+      {
+        "week": 2,
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 560 ₪.",
+            "cashDelta": 560,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״הדירה שבין הטייקים״ בעלות 430 ₪. האיכות כרגע 53.",
+            "cashDelta": -430,
+            "craftDelta": 4,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 560,
+          "expenses": 874,
+          "cash": -280,
+          "wealth": -314,
+          "reputation": 0,
+          "craft": 6,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 27,
+        "scoreAfter": 29,
+        "gapBefore": 2,
+        "gapAfter": 8,
+        "gapChange": 6,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + סדנת בימוי ותרגול + עריכה ובכורה לסרט",
+        "dueWeek": 4
+      },
+      {
+        "week": 3,
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 560 ₪.",
+            "cashDelta": 560,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״הדירה שבין הטייקים״ יצא: 65 איכות, 1,390 ₪ הכנסות ו־16 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 1170,
+            "craftDelta": 0,
+            "reputationDelta": 16,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1984,
+          "expenses": 755,
+          "cash": 1264,
+          "wealth": 1229,
+          "reputation": 17,
+          "craft": 9,
+          "contacts": 1,
+          "happiness": 3,
+          "films": 1
+        },
+        "scoreBefore": 29,
+        "scoreAfter": 58,
+        "gapBefore": 8,
+        "gapAfter": 9,
+        "gapChange": 1,
+        "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש + סדנת בימוי ותרגול",
+        "dueWeek": 5
+      },
+      {
+        "week": 4,
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 850 ₪.",
+            "cashDelta": 850,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״מחר נסדר את זה״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 3,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 884,
+          "expenses": 617,
+          "cash": 304,
+          "wealth": 267,
+          "reputation": 1,
+          "craft": 12,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 58,
+        "scoreAfter": 61,
+        "gapBefore": 9,
+        "gapAfter": 12,
+        "gapChange": 3,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + סדנת בימוי ותרגול + יום צילום לסרט",
+        "dueWeek": 6
+      },
+      {
+        "week": 5,
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 850 ₪.",
+            "cashDelta": 850,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״מחר נסדר את זה״ בעלות 430 ₪. האיכות כרגע 59.",
+            "cashDelta": -430,
+            "craftDelta": 4,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 884,
+          "expenses": 968,
+          "cash": -46,
+          "wealth": -84,
+          "reputation": 1,
+          "craft": 13,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 61,
+        "scoreAfter": 64,
+        "gapBefore": 12,
+        "gapAfter": 16,
+        "gapChange": 4,
+        "nextPlan": "להוציא סרט לבכורה: משמרת צילום בתשלום + עריכה ובכורה לסרט + ערב עם חברים מחוץ לתעשייה",
+        "dueWeek": 7
+      },
+      {
+        "week": 6,
+        "goal": "להוציא סרט לבכורה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״מחר נסדר את זה״ יצא: 71 איכות, 1,486 ₪ הכנסות ו־17 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 1266,
+            "craftDelta": 0,
+            "reputationDelta": 17,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 2936,
+          "expenses": 670,
+          "cash": 2306,
+          "wealth": 2266,
+          "reputation": 17,
+          "craft": 2,
+          "contacts": 1,
+          "happiness": 17,
+          "films": 1
+        },
+        "scoreBefore": 64,
+        "scoreAfter": 73,
+        "gapBefore": 16,
+        "gapAfter": 16,
+        "gapChange": 0,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + סדנת בימוי ותרגול + סגירת תסריט חדש",
+        "dueWeek": 8
+      },
+      {
+        "week": 7,
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״הדירה שבין הטייקים״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 3,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1450,
+          "expenses": 621,
+          "cash": 870,
+          "wealth": 829,
+          "reputation": 1,
+          "craft": 12,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 73,
+        "scoreAfter": 78,
+        "gapBefore": 16,
+        "gapAfter": 19,
+        "gapChange": 3,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט + סדנת בימוי ותרגול",
+        "dueWeek": 9
+      },
+      {
+        "week": 8,
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״הדירה שבין הטייקים״ בעלות 430 ₪. האיכות כרגע 74.",
+            "cashDelta": -430,
+            "craftDelta": 4,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1450,
+          "expenses": 973,
+          "cash": 520,
+          "wealth": 477,
+          "reputation": 1,
+          "craft": 13,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 51,
+        "scoreAfter": 54,
+        "gapBefore": 19,
+        "gapAfter": 13,
+        "gapChange": -6,
+        "nextPlan": "להוציא סרט לבכורה: משמרת צילום בתשלום + עריכה ובכורה לסרט + סדנת בימוי ותרגול",
+        "dueWeek": 10
+      },
+      {
+        "week": 9,
+        "goal": "להוציא סרט לבכורה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״הדירה שבין הטייקים״ יצא: 86 איכות, 1,726 ₪ הכנסות ו־18 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 1506,
+            "craftDelta": 0,
+            "reputationDelta": 18,
+            "contactsDelta": 0
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 3216,
+          "expenses": 764,
+          "cash": 2496,
+          "wealth": 2452,
+          "reputation": 19,
+          "craft": 9,
+          "contacts": 1,
+          "happiness": 3,
+          "films": 1
+        },
+        "scoreBefore": 54,
+        "scoreAfter": 61,
+        "gapBefore": 13,
+        "gapAfter": 6,
+        "gapChange": -7,
+        "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש",
+        "dueWeek": 11
+      },
+      {
+        "week": 10,
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״הדירה שבין הטייקים״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 3,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1490,
+          "expenses": 536,
+          "cash": 1000,
+          "wealth": 954,
+          "reputation": 0,
+          "craft": 5,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 61,
+        "scoreAfter": 62,
+        "gapBefore": 6,
+        "gapAfter": 3,
+        "gapChange": -3,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט + ערב עם חברים מחוץ לתעשייה",
+        "dueWeek": 12
+      },
+      {
+        "week": 11,
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״הדירה שבין הטייקים״ בעלות 2,800 ₪. האיכות כרגע 78.",
+            "cashDelta": -2800,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1490,
+          "expenses": 3258,
+          "cash": -1720,
+          "wealth": -1768,
+          "reputation": 0,
+          "craft": 2,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 62,
+        "scoreAfter": 61,
+        "gapBefore": 3,
+        "gapAfter": 31,
+        "gapChange": 28,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + פגישה עם מפיקה",
+        "dueWeek": 13
+      },
+      {
+        "week": 12,
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 5,
+            "contactsDelta": 6
+          }
+        ],
+        "delta": {
+          "income": 1490,
+          "expenses": 540,
+          "cash": 1000,
+          "wealth": 950,
+          "reputation": 5,
+          "craft": 0,
+          "contacts": 7,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 61,
+        "scoreAfter": 63,
+        "gapBefore": 31,
+        "gapAfter": 26,
+        "gapChange": -5,
+        "nextPlan": "להוציא סרט לבכורה: משמרת צילום בתשלום + עריכה ובכורה לסרט",
+        "dueWeek": 14
+      },
+      {
+        "week": 13,
+        "goal": "להוציא סרט לבכורה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״הדירה שבין הטייקים״ יצא: 90 איכות, 1,905 ₪ הכנסות ו־5 מוניטין. הקהל היה קטן מהתחזית.",
+            "cashDelta": 1685,
+            "craftDelta": 0,
+            "reputationDelta": 5,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 3436,
+          "expenses": 682,
+          "cash": 2806,
+          "wealth": 2754,
+          "reputation": 5,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": -10,
+          "films": 1
+        },
+        "scoreBefore": 63,
+        "scoreAfter": 84,
+        "gapBefore": 26,
+        "gapAfter": 2,
+        "gapChange": -24,
+        "nextPlan": "להתאושש לפני ההפקה הבאה: משמרת צילום בתשלום + ערב עם חברים מחוץ לתעשייה",
+        "dueWeek": 15
+      },
+      {
+        "week": 14,
+        "goal": "להתאושש לפני ההפקה הבאה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1531,
+          "expenses": 464,
+          "cash": 1121,
+          "wealth": 1067,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 84,
+        "scoreAfter": 87,
+        "gapBefore": 2,
+        "gapAfter": 3,
+        "gapChange": 1,
+        "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש",
+        "dueWeek": 16
+      }
+    ],
+    "weekStartGap": 3,
+    "seasonFilmBase": 2,
+    "initializedWeek": 1,
+    "lastReportWeek": 14,
+    "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש",
+    "dueWeek": 16,
+    "plan": {
+      "week": 15,
+      "goal": "להתחיל סרט חדש",
+      "actions": [
+        {
+          "id": "work",
+          "label": "משמרת צילום בתשלום"
+        },
+        {
+          "id": "develop",
+          "label": "סגירת תסריט חדש"
+        }
+      ]
+    }
+  },
+  "status": "playing",
+  "ending": "",
+  "weeklySummary": {
+    "income": 5786,
+    "expenses": 530,
+    "net": 5256,
+    "text": "מחיה: 410 ₪ · ריבית: 0 ₪ · תמלוגים: 266 ₪. שבוע חדש, קפה חדש.",
+    "fundingResults": [],
+    "rivalReport": {
+      "week": 14,
+      "goal": "להתאושש לפני ההפקה הבאה",
+      "actions": [
+        {
+          "id": "work",
+          "label": "משמרת צילום בתשלום",
+          "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+          "cashDelta": 1380,
+          "craftDelta": 0,
+          "reputationDelta": 0,
+          "contactsDelta": 1
+        },
+        {
+          "id": "rest",
+          "label": "ערב עם חברים מחוץ לתעשייה",
+          "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+          "cashDelta": 0,
+          "craftDelta": 0,
+          "reputationDelta": 0,
+          "contactsDelta": 0
+        }
+      ],
+      "delta": {
+        "income": 1531,
+        "expenses": 464,
+        "cash": 1121,
+        "wealth": 1067,
+        "reputation": 0,
+        "craft": 0,
+        "contacts": 1,
+        "happiness": 9,
+        "films": 0
+      },
+      "scoreBefore": 84,
+      "scoreAfter": 87,
+      "gapBefore": 2,
+      "gapAfter": 3,
+      "gapChange": 1,
+      "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש",
+      "dueWeek": 16
+    }
+  },
+  "rng": 2593204823,
+  "used": {
+    "work": 0,
+    "course": 0,
+    "practice": 0,
+    "network": 0,
+    "mingle": 0,
+    "family": 1,
+    "fun": 0,
+    "meal": 0,
+    "borrow": 0,
+    "pitch": 0,
+    "wedding": 0,
+    "ad": 1,
+    "lecture": 0,
+    "teach_masterclass": 1,
+    "jury": 0
+  },
+  "weeklyTotals": {
+    "income": 3150,
+    "expenses": 1380
+  },
+  "crisisWeeks": 0
+}

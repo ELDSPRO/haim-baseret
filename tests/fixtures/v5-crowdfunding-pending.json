@@ -1,0 +1,234 @@
+{
+  "version": 5,
+  "characterId": "kobi",
+  "name": "קובי",
+  "difficulty": "calm",
+  "season": 1,
+  "seasonStartedWeek": 1,
+  "seasonFilmBase": 0,
+  "week": 1,
+  "maxWeeks": 20,
+  "hours": 40,
+  "maxHours": 50,
+  "cash": 2080,
+  "debt": 800,
+  "energy": 74,
+  "happiness": 62,
+  "craft": 14,
+  "reputation": 8,
+  "contacts": 8,
+  "job": 0,
+  "location": "bank",
+  "films": [],
+  "project": {
+    "workload": {
+      "shootDone": 0,
+      "editDone": 0,
+      "shootMode": null,
+      "editMode": null,
+      "shootCraft": null,
+      "editCraft": null
+    },
+    "id": 1,
+    "grantBudget": 0,
+    "grantAwarded": 0,
+    "grantExpired": 0,
+    "dossier": 0,
+    "twist": null,
+    "setbacks": [],
+    "breakthroughs": [],
+    "productionIncome": 0,
+    "crew": [],
+    "dilemmaEligible": true,
+    "title": "איש לא הזמין מונית",
+    "storyGenre": "thriller",
+    "pitch": "נהגת אוספת נוסע לכתובת שלה עצמה, והוא יודע בדיוק מה היא מסתירה.",
+    "type": "short",
+    "genre": "דרמה קצרה",
+    "stage": "script",
+    "quality": 14,
+    "budget": 120,
+    "startedWeek": 1,
+    "createdQuarter": 0,
+    "crowdfunding": {
+      "startedWeek": 1,
+      "dueWeek": 3,
+      "target": 600,
+      "contactsAtLaunch": 8,
+      "reputationAtLaunch": 8,
+      "qualityAtLaunch": 14,
+      "promoted": false,
+      "roll": 64.88193017430604,
+      "status": "pending",
+      "gross": 0,
+      "fee": 0,
+      "rewards": 0,
+      "awarded": 0,
+      "balance": 0,
+      "spent": 0,
+      "expired": 0,
+      "resolvedWeek": null,
+      "chance": 37
+    }
+  },
+  "nextProjectId": 2,
+  "funding": {
+    "application": null,
+    "history": []
+  },
+  "assets": [],
+  "event": null,
+  "productionAlert": null,
+  "log": [
+    {
+      "week": 1,
+      "text": "קמפיין מימון המונים — יעד: 600 ₪ · נטו לסרט בהצלחה: 480 ₪ · תוצאה בעוד שתי תקופות · 37% סיכוי"
+    },
+    {
+      "week": 1,
+      "text": "נולד ״איש לא הזמין מונית״. יש רעיון; עכשיו צריך להפוך אותו לתסריט שאפשר לצלם. — מתחילים תסריט · 2 ימי צילום · 3 ימי עריכה · צילום בסיסי: 650 ₪ · +2 מיומנות"
+    },
+    {
+      "week": 1,
+      "text": "ברוכים הבאים לתעשייה. יש לך 50 שעות בסבב מפתח בתוך כל רבעון. יתר התקופה היא שגרה מאוזנת, בלי 13 חיובים אוטומטיים. מתחילים בגיל 23, עם חלום וחוב קטן."
+    }
+  ],
+  "rival": {
+    "name": "איתי",
+    "rng": 1360045822,
+    "progress": 29,
+    "quote": "״בסבב הזה: להתחיל סרט חדש. הפעם זה ביומן, לא רק בסטורי.״",
+    "location": "cafe",
+    "cash": 2200,
+    "debt": 800,
+    "craft": 12,
+    "reputation": 8,
+    "contacts": 8,
+    "happiness": 62,
+    "films": [],
+    "project": null,
+    "history": [],
+    "weekStartGap": 0,
+    "seasonFilmBase": 0,
+    "initializedWeek": 1,
+    "lastReportWeek": 0,
+    "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש + ערב עם חברים מחוץ לתעשייה",
+    "dueWeek": 2,
+    "plan": {
+      "week": 1,
+      "goal": "להתחיל סרט חדש",
+      "actions": [
+        {
+          "id": "work",
+          "label": "משמרת צילום בתשלום"
+        },
+        {
+          "id": "develop",
+          "label": "סגירת תסריט חדש"
+        },
+        {
+          "id": "rest",
+          "label": "ערב עם חברים מחוץ לתעשייה"
+        }
+      ]
+    }
+  },
+  "status": "playing",
+  "ending": "",
+  "weeklySummary": null,
+  "rng": 1892583,
+  "used": {
+    "overtime": 0,
+    "work": 0,
+    "course": 0,
+    "practice": 0,
+    "network": 0,
+    "mingle": 0,
+    "family": 0,
+    "fun": 0,
+    "meal": 0,
+    "borrow": 0,
+    "pitch": 0,
+    "wedding": 0,
+    "ad": 0,
+    "lecture": 0,
+    "teach_masterclass": 0,
+    "jury": 0
+  },
+  "weeklyTotals": {
+    "income": 0,
+    "expenses": 120
+  },
+  "crisisWeeks": 0,
+  "life": {
+    "quarters": 0,
+    "chapterProjectId": null,
+    "cityId": "tel_aviv",
+    "retired": false,
+    "retirementSummary": "",
+    "productionLoad": 1,
+    "usedCityOffer": false,
+    "usedCityLeisure": false,
+    "eventHistory": [],
+    "chaptersWon": 0,
+    "chaptersCompleted": 0,
+    "lastRecordedChapter": 0,
+    "market": {
+      "rng": 1013904245,
+      "quarter": 0,
+      "prices": {
+        "takela": 120,
+        "netpause": 90,
+        "pomela": 150
+      },
+      "previousPrices": {
+        "takela": 120,
+        "netpause": 90,
+        "pomela": 150
+      },
+      "holdings": {
+        "takela": 0,
+        "netpause": 0,
+        "pomela": 0
+      },
+      "costBasis": {
+        "takela": 0,
+        "netpause": 0,
+        "pomela": 0
+      },
+      "realizedProfit": 0,
+      "trades": 0,
+      "headline": "שלוש חברות בדיוניות. מחירים חדשים יגיעו בסבב הבא."
+    },
+    "relationship": {
+      "partnerId": null,
+      "closeness": 0,
+      "usedDate": false
+    }
+  },
+  "locationBoards": {
+    "week": 1,
+    "rng": 1391011220,
+    "cafe": {
+      "offerIds": [
+        "film_quiz",
+        "alumni_table",
+        "old_client"
+      ],
+      "usedIds": []
+    },
+    "gear": {
+      "offerIds": [
+        "laptop_bargain",
+        "crew_cleanup",
+        "desk_bargain"
+      ],
+      "usedIds": []
+    }
+  },
+  "festivalCircuit": {
+    "rng": 3144134274,
+    "pending": [],
+    "history": []
+  }
+}

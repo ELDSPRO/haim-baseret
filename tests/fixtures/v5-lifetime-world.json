@@ -1,0 +1,2692 @@
+{
+  "version": 5,
+  "characterId": "kobi",
+  "name": "הבוט עם היומן",
+  "difficulty": "calm",
+  "season": 7,
+  "seasonStartedWeek": 34,
+  "seasonFilmBase": 6,
+  "week": 35,
+  "maxWeeks": 140,
+  "hours": 38,
+  "maxHours": 50,
+  "cash": 35062,
+  "debt": 0,
+  "energy": 60,
+  "happiness": 100,
+  "craft": 100,
+  "reputation": 100,
+  "contacts": 80,
+  "job": 3,
+  "location": "bank",
+  "films": [
+    {
+      "workload": {
+        "shootDone": 3,
+        "editDone": 4,
+        "shootMode": "lean",
+        "editMode": "basic",
+        "shootCraft": 48,
+        "editCraft": 54
+      },
+      "id": 1,
+      "grantBudget": 0,
+      "grantAwarded": 0,
+      "grantExpired": 0,
+      "dossier": 0,
+      "twist": {
+        "id": "doc_neighbor",
+        "choice": 0,
+        "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+      },
+      "setbacks": [],
+      "breakthroughs": [],
+      "productionIncome": 0,
+      "crew": [],
+      "dilemmaEligible": true,
+      "title": "הארכיון של דוד ניסים",
+      "storyGenre": "doc",
+      "pitch": "משפחה מגלה אלפי קלטות שמתעדות כל אירוע בשכונה, כולל את אלה שעדיף לשכוח.",
+      "type": "doc",
+      "genre": "דוקו",
+      "stage": "released",
+      "quality": 74,
+      "budget": 926,
+      "startedWeek": 2,
+      "createdQuarter": 1,
+      "shootStyle": "lean",
+      "festivalEntries": [],
+      "awards": [],
+      "review": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית.",
+      "releasedWeek": 4,
+      "releasedQuarter": 3,
+      "route": "commercial",
+      "revenue": 1718,
+      "royalty": 79
+    },
+    {
+      "workload": {
+        "shootDone": 2,
+        "editDone": 3,
+        "shootMode": "full",
+        "editMode": "polish",
+        "shootCraft": 100,
+        "editCraft": 100
+      },
+      "id": 2,
+      "grantBudget": 0,
+      "grantAwarded": 0,
+      "grantExpired": 0,
+      "dossier": 0,
+      "twist": {
+        "id": "full_generator",
+        "choice": 0,
+        "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+      },
+      "setbacks": [],
+      "breakthroughs": [],
+      "productionIncome": 0,
+      "crew": [],
+      "dilemmaEligible": true,
+      "title": "בלי כוסברה, עם רגשות",
+      "storyGenre": "romance",
+      "pitch": "טבחית ולקוחה קבועה מתכתבות דרך הערות להזמנה, עד שמערכת המשלוחים מתעדכנת.",
+      "type": "short",
+      "genre": "דרמה קצרה",
+      "stage": "released",
+      "quality": 100,
+      "budget": 1495,
+      "startedWeek": 6,
+      "createdQuarter": 7,
+      "shootStyle": "full",
+      "festivalEntries": [],
+      "awards": [],
+      "review": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית.",
+      "releasedWeek": 8,
+      "releasedQuarter": 11,
+      "route": "festival",
+      "revenue": 1278,
+      "royalty": 45
+    },
+    {
+      "workload": {
+        "shootDone": 8,
+        "editDone": 12,
+        "shootMode": "full",
+        "editMode": "polish",
+        "shootCraft": 100,
+        "editCraft": 100
+      },
+      "id": 3,
+      "grantBudget": 0,
+      "grantAwarded": 0,
+      "grantExpired": 0,
+      "dossier": 0,
+      "twist": {
+        "id": "full_generator",
+        "choice": 0,
+        "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+      },
+      "setbacks": [],
+      "breakthroughs": [
+        {
+          "kind": "breakthrough",
+          "id": "3-good-script",
+          "projectId": 3,
+          "stage": "script",
+          "title": "הסינופסיס מצא קהל לפני הסרט",
+          "text": "קבוצת הקרנות מקומית קנתה מראש רישיון הקרנה נפרד. מישהו אשכרה שילם על קובץ PDF. התקבלו 646 ₪ במזומן כהכנסה מוקדמת של הסרט. זו הכנסה נפרדת; היא לא תשולם שוב בבכורה ואינה מבטיחה הצלחה בקופות.",
+          "amount": 646,
+          "rewardCash": 646,
+          "week": 8
+        }
+      ],
+      "productionIncome": 646,
+      "crew": [],
+      "dilemmaEligible": true,
+      "title": "עד שייגמרו הזיתים",
+      "storyGenre": "drama",
+      "pitch": "אב ובן מחכים לקונה של המשק, וממשיכים למסוק כאילו אין שום דבר למכור.",
+      "type": "feature",
+      "genre": "פיצ׳ר",
+      "stage": "released",
+      "quality": 100,
+      "budget": 5433,
+      "startedWeek": 8,
+      "createdQuarter": 11,
+      "shootStyle": "full",
+      "festivalEntries": [],
+      "awards": [],
+      "review": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית.",
+      "releasedWeek": 13,
+      "releasedQuarter": 26,
+      "route": "commercial",
+      "revenue": 10640,
+      "royalty": 95,
+      "boxOfficeSuccess": true,
+      "forecast": {
+        "fee": 600,
+        "riskChance": 12,
+        "revenueMin": 3405,
+        "revenueMax": 10640,
+        "successRevenue": 10640,
+        "flopRevenue": 3405,
+        "expectedRevenue": 9772
+      }
+    },
+    {
+      "workload": {
+        "shootDone": 8,
+        "editDone": 12,
+        "shootMode": "full",
+        "editMode": "polish",
+        "shootCraft": 100,
+        "editCraft": 100
+      },
+      "id": 4,
+      "grantBudget": 0,
+      "grantAwarded": 0,
+      "grantExpired": 0,
+      "dossier": 0,
+      "twist": {
+        "id": "full_generator",
+        "choice": 0,
+        "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+      },
+      "setbacks": [],
+      "breakthroughs": [
+        {
+          "kind": "breakthrough",
+          "id": "4-good-edit",
+          "projectId": 4,
+          "stage": "edit",
+          "title": "מישהו אהב דווקא את הגרסה שלך",
+          "text": "סדרת הקרנות רכשה רישיון נפרד אחרי צפייה בקטע ערוך. לא ביקשו אפילו ״רק עוד שינוי קטן״. התקבלו 597 ₪ במזומן כהכנסה מוקדמת של הסרט. זו הכנסה נפרדת; היא לא תשולם שוב בבכורה ואינה מבטיחה הצלחה בקופות.",
+          "amount": 597,
+          "rewardCash": 597,
+          "week": 18
+        }
+      ],
+      "productionIncome": 597,
+      "crew": [],
+      "dilemmaEligible": true,
+      "title": "מפתח מספר שבע",
+      "storyGenre": "thriller",
+      "pitch": "מנעולן מוזמן לדירה שהחליף לה מנעול אתמול. הלקוח טוען שהוא גר שם עשרים שנה.",
+      "type": "feature",
+      "genre": "פיצ׳ר",
+      "stage": "released",
+      "quality": 100,
+      "budget": 5433,
+      "startedWeek": 13,
+      "createdQuarter": 26,
+      "shootStyle": "full",
+      "festivalEntries": [],
+      "awards": [],
+      "review": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית.",
+      "releasedWeek": 18,
+      "releasedQuarter": 46,
+      "route": "festival",
+      "revenue": 5396,
+      "royalty": 45,
+      "boxOfficeSuccess": true,
+      "forecast": {
+        "fee": 600,
+        "riskChance": 8,
+        "revenueMin": 1727,
+        "revenueMax": 5396,
+        "successRevenue": 5396,
+        "flopRevenue": 1727,
+        "expectedRevenue": 5102
+      }
+    },
+    {
+      "workload": {
+        "shootDone": 12,
+        "editDone": 18,
+        "shootMode": "full",
+        "editMode": "polish",
+        "shootCraft": 100,
+        "editCraft": 100
+      },
+      "id": 5,
+      "grantBudget": 0,
+      "grantAwarded": 0,
+      "grantExpired": 0,
+      "dossier": 0,
+      "twist": {
+        "id": "full_generator",
+        "choice": 0,
+        "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+      },
+      "setbacks": [
+        {
+          "kind": "setback",
+          "id": "5-shoot",
+          "projectId": 5,
+          "stage": "shoot",
+          "title": "הציוד בחר לשבות באמצע הטייק",
+          "text": "השכרה חלופית והובלה דחופה הצילו את היום. החשבונית הגיעה עוד לפני החומרים. עלות לא מתוכננת: 1,177 ₪. שולם במזומן: 1,177 ₪.",
+          "amount": 1177,
+          "grantUsed": 0,
+          "cashPaid": 1177,
+          "debtAdded": 0,
+          "week": 21
+        }
+      ],
+      "breakthroughs": [],
+      "productionIncome": 0,
+      "crew": [],
+      "dilemmaEligible": true,
+      "title": "הכיסא הריק של יום שישי",
+      "storyGenre": "drama",
+      "pitch": "אחרי שנים בחו״ל, הבת חוזרת לארוחה שבה שמרו לה מקום אך לא את המילה האחרונה.",
+      "type": "blockbuster",
+      "genre": "שובר קופות",
+      "stage": "released",
+      "quality": 100,
+      "budget": 13380,
+      "startedWeek": 18,
+      "createdQuarter": 46,
+      "shootStyle": "full",
+      "festivalEntries": [],
+      "awards": [],
+      "review": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית.",
+      "releasedWeek": 26,
+      "releasedQuarter": 78,
+      "route": "commercial",
+      "revenue": 22400,
+      "royalty": 95,
+      "boxOfficeSuccess": true,
+      "forecast": {
+        "fee": 1400,
+        "riskChance": 28,
+        "revenueMin": 4480,
+        "revenueMax": 22400,
+        "successRevenue": 22400,
+        "flopRevenue": 4480,
+        "expectedRevenue": 17382
+      }
+    },
+    {
+      "workload": {
+        "shootDone": 12,
+        "editDone": 18,
+        "shootMode": "full",
+        "editMode": "polish",
+        "shootCraft": 100,
+        "editCraft": 100
+      },
+      "id": 6,
+      "grantBudget": 0,
+      "grantAwarded": 0,
+      "grantExpired": 0,
+      "dossier": 0,
+      "twist": {
+        "id": "full_generator",
+        "choice": 0,
+        "text": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית."
+      },
+      "setbacks": [
+        {
+          "kind": "setback",
+          "id": "6-shoot",
+          "projectId": 6,
+          "stage": "shoot",
+          "title": "יום הצילום גלש",
+          "text": "השוט האחרון היה יפה. גם התוספת להסעות ולשעות הצוות אמיתית מאוד. עלות לא מתוכננת: 1,731 ₪. שולם במזומן: 1,731 ₪.",
+          "amount": 1731,
+          "grantUsed": 0,
+          "cashPaid": 1731,
+          "debtAdded": 0,
+          "week": 31
+        }
+      ],
+      "breakthroughs": [
+        {
+          "kind": "breakthrough",
+          "id": "6-good-edit",
+          "projectId": 6,
+          "stage": "edit",
+          "title": "מישהו אהב דווקא את הגרסה שלך",
+          "text": "סדרת הקרנות רכשה רישיון נפרד אחרי צפייה בקטע ערוך. לא ביקשו אפילו ״רק עוד שינוי קטן״. התקבלו 1,871 ₪ במזומן כהכנסה מוקדמת של הסרט. זו הכנסה נפרדת; היא לא תשולם שוב בבכורה ואינה מבטיחה הצלחה בקופות.",
+          "amount": 1871,
+          "rewardCash": 1871,
+          "week": 34
+        }
+      ],
+      "productionIncome": 1871,
+      "crew": [],
+      "dilemmaEligible": true,
+      "title": "עוד קפה ואצא",
+      "storyGenre": "romance",
+      "pitch": "שני גברים שנפרדו נפגשים כדי להחזיר מפתח. המקום עומד לסגור, והשיחה רק מתחילה.",
+      "type": "blockbuster",
+      "genre": "שובר קופות",
+      "stage": "released",
+      "quality": 100,
+      "budget": 12610,
+      "startedWeek": 26,
+      "createdQuarter": 78,
+      "shootStyle": "full",
+      "festivalEntries": [],
+      "awards": [],
+      "review": "המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית.",
+      "releasedWeek": 34,
+      "releasedQuarter": 110,
+      "route": "commercial",
+      "revenue": 22400,
+      "royalty": 95,
+      "boxOfficeSuccess": true,
+      "forecast": {
+        "fee": 1400,
+        "riskChance": 28,
+        "revenueMin": 4480,
+        "revenueMax": 22400,
+        "successRevenue": 22400,
+        "flopRevenue": 4480,
+        "expectedRevenue": 17382
+      }
+    }
+  ],
+  "project": null,
+  "nextProjectId": 7,
+  "funding": {
+    "application": null,
+    "history": []
+  },
+  "assets": [
+    "bike",
+    "desk",
+    "camera",
+    "laptop",
+    "apartment",
+    "studio_property"
+  ],
+  "event": null,
+  "productionAlert": null,
+  "log": [
+    {
+      "week": 35,
+      "text": "לעבור ללוס אנג׳לס — מחיה ×2 · שכר מקומי ×1.7 · צילום ועריכה ×1.45 · −5 קשרים מקומיים; הסרטים והנכסים נשמרים"
+    },
+    {
+      "week": 35,
+      "text": "לעבור ללונדון — מחיה ×1.55 · שכר מקומי ×1.4 · צילום ועריכה ×1.2 · −5 קשרים מקומיים; הסרטים והנכסים נשמרים"
+    },
+    {
+      "week": 35,
+      "text": "לעבור לברלין — מחיה ×1.12 · שכר מקומי ×1 · צילום ועריכה ×0.9 · −5 קשרים מקומיים; הסרטים והנכסים נשמרים"
+    },
+    {
+      "week": 35,
+      "text": "לקבוע גבולות ולסגור את הלפטופ — +8 אושר, +5 אנרגיה."
+    },
+    {
+      "week": 34,
+      "text": "סוף שבוע 34: מחיה: 238 ₪ · ריבית: 0 ₪ · תמלוגים: 133 ₪ · שכירות מנכסים: 320 ₪. שבוע המפתח הסתיים בתוך 12 חודשי הפקה; יתר התקופה היא שגרה מאוזנת."
+    },
+    {
+      "week": 34,
+      "text": "לקנות 5 מניות פומלה — 5 × 245 ₪ · עמלה: 12 ₪ · חיוב כולל: 1,237 ₪ · השווי יכול גם לרדת; כסף אישי בלבד"
+    },
+    {
+      "week": 34,
+      "text": "לעבור לאתונה — מחיה ×0.72 · שכר מקומי ×0.8 · צילום ועריכה ×0.78 · −5 קשרים מקומיים; הסרטים והנכסים נשמרים"
+    },
+    {
+      "week": 34,
+      "text": "פרק 7: להוציא סרט חדש בפרק הזה. נוספו 20 סבבים; הכסף, הסרטים והשעות שנותרו נשמרו."
+    },
+    {
+      "week": 34,
+      "text": "קאט. יש לנו ניצחון! הקרדיט שלך סוף סוף גדול מספיק בשביל שאמא תמצא אותו."
+    },
+    {
+      "week": 34,
+      "text": "״עוד קפה ואצא״ יצא לקהל. עכשיו אפשר לשלוח למשפחה קישור אמיתי. איכות הסרט: 100/100. הבכורה הצליחה: 22,400 ₪ הכנסות בפועל. המבקר ציין לטובה את הסצנה שהצלת עם איש מקצוע. החשבונית פחות פוטוגנית. — בהצלחה: 22,400 ₪ · בכישלון מסחרי: 4,480 ₪ · 28% סיכון לכישלון מסחרי · בהצלחה +29 מוניטין; בכישלון רק 13 · תמלוגים: 33 ₪ עד 95 ₪ בסבב · בכישלון: −8 אושר"
+    },
+    {
+      "week": 34,
+      "text": "הבכורה עמדה בציפיות. הכנסות בפועל: 22,400 ₪, תקציב כולל: 12,610 ₪."
+    },
+    {
+      "week": 34,
+      "text": "העריכה של ״עוד קפה ואצא״ נעולה. הבכורה מחכה: הקרנה בסינמטק או הפצה מסחרית לקהל? — העריכה תושלם; מוכן להפצה · +2 איכות · +0 מיומנות"
+    },
+    {
+      "week": 34,
+      "text": "מישהו אהב דווקא את הגרסה שלך: סדרת הקרנות רכשה רישיון נפרד אחרי צפייה בקטע ערוך. לא ביקשו אפילו ״רק עוד שינוי קטן״. התקבלו 1,871 ₪ במזומן כהכנסה מוקדמת של הסרט. זו הכנסה נפרדת; היא לא תשולם שוב בבכורה ואינה מבטיחה הצלחה בקופות."
+    },
+    {
+      "week": 34,
+      "text": "יום עריכה עם צבע וסאונד — +3 איכות · +1 מיומנות"
+    },
+    {
+      "week": 34,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +0 מיומנות"
+    },
+    {
+      "week": 34,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +0 מיומנות"
+    },
+    {
+      "week": 34,
+      "text": "יום עריכה עם צבע וסאונד — +3 איכות · +0 מיומנות"
+    },
+    {
+      "week": 33,
+      "text": "סוף שבוע 33: מחיה: 330 ₪ · ריבית: 0 ₪ · תמלוגים: 38 ₪ · שכירות מנכסים: 320 ₪. שבוע המפתח הסתיים בתוך 12 חודשי הפקה; יתר התקופה היא שגרה מאוזנת."
+    },
+    {
+      "week": 33,
+      "text": "לאכול משהו שאינו קפה — +24 אנרגיה · +3 אושר"
+    },
+    {
+      "week": 33,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +1 מיומנות"
+    },
+    {
+      "week": 33,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +0 מיומנות"
+    },
+    {
+      "week": 33,
+      "text": "יום עריכה עם צבע וסאונד — +3 איכות · +0 מיומנות"
+    },
+    {
+      "week": 33,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +0 מיומנות"
+    },
+    {
+      "week": 33,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +1 מיומנות"
+    },
+    {
+      "week": 33,
+      "text": "יום עריכה עם צבע וסאונד — +3 איכות · +0 מיומנות"
+    },
+    {
+      "week": 32,
+      "text": "סוף שבוע 32: מחיה: 330 ₪ · ריבית: 0 ₪ · תמלוגים: 38 ₪ · שכירות מנכסים: 320 ₪. שבוע המפתח הסתיים בתוך 12 חודשי הפקה; יתר התקופה היא שגרה מאוזנת."
+    },
+    {
+      "week": 32,
+      "text": "לאכול משהו שאינו קפה — +24 אנרגיה · +3 אושר"
+    },
+    {
+      "week": 32,
+      "text": "שנ״צ בלי רגשות אשמה — +28 אנרגיה · +4 אושר"
+    },
+    {
+      "week": 32,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +0 מיומנות"
+    },
+    {
+      "week": 32,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +1 מיומנות"
+    },
+    {
+      "week": 32,
+      "text": "יום עריכה עם צבע וסאונד — +3 איכות · +0 מיומנות"
+    },
+    {
+      "week": 32,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +0 מיומנות"
+    },
+    {
+      "week": 32,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +0 מיומנות"
+    },
+    {
+      "week": 31,
+      "text": "סוף שבוע 31: מחיה: 330 ₪ · ריבית: 0 ₪ · תמלוגים: 52 ₪ · שכירות מנכסים: 320 ₪. שבוע המפתח הסתיים בתוך 12 חודשי הפקה; יתר התקופה היא שגרה מאוזנת."
+    },
+    {
+      "week": 31,
+      "text": "שנ״צ בלי רגשות אשמה — +28 אנרגיה · +4 אושר"
+    },
+    {
+      "week": 31,
+      "text": "יום עריכה עם צבע וסאונד — +3 איכות · +1 מיומנות"
+    },
+    {
+      "week": 31,
+      "text": "להנחות כיתת אמן — +1,250 ₪ · +4 מוניטין · +2 מיומנות"
+    },
+    {
+      "week": 31,
+      "text": "שנ״צ בלי רגשות אשמה — +28 אנרגיה · +4 אושר"
+    },
+    {
+      "week": 31,
+      "text": "יום עריכה עם צבע וסאונד — +2 איכות · +0 מיומנות"
+    },
+    {
+      "week": 31,
+      "text": "לשפוט בפסטיבל עולמי — +1,900 ₪ · +5 מוניטין · +4 קשרים · +6 אושר"
+    },
+    {
+      "week": 31,
+      "text": "להזמין הקלטת דיאלוג מחדש — +8 איכות · −180 ₪ במזומן"
+    },
+    {
+      "week": 31,
+      "text": "״עוד קפה ואצא״ צולם. כל החומרים מחכים בחדר העריכה, כולל שלוש דקות של מכסה עדשה. — הצילום יושלם; עוברים לעריכה · +4 איכות · +0 מיומנות"
+    },
+    {
+      "week": 31,
+      "text": "יום הצילום גלש: השוט האחרון היה יפה. גם התוספת להסעות ולשעות הצוות אמיתית מאוד. עלות לא מתוכננת: 1,731 ₪. שולם במזומן: 1,731 ₪."
+    },
+    {
+      "week": 30,
+      "text": "סוף שבוע 30: מחיה: 330 ₪ · ריבית: 0 ₪ · תמלוגים: 52 ₪ · שכירות מנכסים: 320 ₪. שבוע המפתח הסתיים בתוך 12 חודשי הפקה; יתר התקופה היא שגרה מאוזנת."
+    },
+    {
+      "week": 30,
+      "text": "להרצות על הסרט שלך — +720 ₪ · +3 מוניטין · +3 אושר"
+    },
+    {
+      "week": 30,
+      "text": "יום צילום עם צוות מסודר — +3 איכות · +1 מיומנות"
+    },
+    {
+      "week": 30,
+      "text": "יום צילום עם צוות מסודר — +4 איכות · +0 מיומנות"
+    },
+    {
+      "week": 30,
+      "text": "יום צילום עם צוות מסודר — +4 איכות · +1 מיומנות"
+    },
+    {
+      "week": 30,
+      "text": "לשפוט בפסטיבל עולמי — +1,900 ₪ · +5 מוניטין · +4 קשרים · +6 אושר"
+    },
+    {
+      "week": 30,
+      "text": "יום צילום עם צוות מסודר — +4 איכות · +0 מיומנות"
+    }
+  ],
+  "rival": {
+    "name": "איתי",
+    "rng": 3040314746,
+    "progress": 99,
+    "quote": "״בסבב הזה: לחזק את הקריירה לקראת הסרט הבא. הפעם זה ביומן, לא רק בסטורי.״",
+    "location": "cafe",
+    "cash": 51078,
+    "debt": 0,
+    "craft": 100,
+    "reputation": 100,
+    "contacts": 100,
+    "happiness": 97,
+    "films": [
+      {
+        "title": "נסיעה בלי לשאול",
+        "type": "short",
+        "quality": 65,
+        "route": "commercial",
+        "budget": 730,
+        "revenue": 1390,
+        "royalty": 34,
+        "releasedWeek": 3,
+        "releasedQuarter": 2
+      },
+      {
+        "title": "סליחה, זה התור שלי",
+        "type": "short",
+        "quality": 69,
+        "route": "commercial",
+        "budget": 730,
+        "revenue": 1454,
+        "royalty": 35,
+        "releasedWeek": 6,
+        "releasedQuarter": 7
+      },
+      {
+        "title": "תחנה אחת לפני הבית",
+        "type": "feature",
+        "quality": 87,
+        "route": "commercial",
+        "budget": 3100,
+        "revenue": 4878,
+        "royalty": 40,
+        "releasedWeek": 9,
+        "releasedQuarter": 14
+      },
+      {
+        "title": "אהבה בקומה זמנית",
+        "type": "feature",
+        "quality": 84,
+        "route": "commercial",
+        "budget": 3100,
+        "revenue": 4743,
+        "royalty": 39,
+        "releasedWeek": 12,
+        "releasedQuarter": 23
+      },
+      {
+        "title": "הדרקון מהדוד שמש",
+        "type": "blockbuster",
+        "quality": 92,
+        "route": "commercial",
+        "budget": 6800,
+        "revenue": 9110,
+        "royalty": 41,
+        "releasedWeek": 15,
+        "releasedQuarter": 34
+      },
+      {
+        "title": "חלון לכיוון אחר",
+        "type": "blockbuster",
+        "quality": 93,
+        "route": "commercial",
+        "budget": 6800,
+        "revenue": 9190,
+        "royalty": 41,
+        "releasedWeek": 18,
+        "releasedQuarter": 46
+      },
+      {
+        "title": "מבצע חניה כפולה",
+        "type": "blockbuster",
+        "quality": 96,
+        "route": "commercial",
+        "budget": 6800,
+        "revenue": 9430,
+        "royalty": 42,
+        "releasedWeek": 22,
+        "releasedQuarter": 62
+      },
+      {
+        "title": "השיחה שלא הגיעה",
+        "type": "blockbuster",
+        "quality": 90,
+        "route": "commercial",
+        "budget": 6800,
+        "revenue": 8950,
+        "royalty": 41,
+        "releasedWeek": 26,
+        "releasedQuarter": 78
+      },
+      {
+        "title": "מחר תתקשרי את",
+        "type": "blockbuster",
+        "quality": 98,
+        "route": "commercial",
+        "budget": 6800,
+        "revenue": 9590,
+        "royalty": 43,
+        "releasedWeek": 30,
+        "releasedQuarter": 94
+      },
+      {
+        "title": "תעלומת ארגז הארטיקים",
+        "type": "blockbuster",
+        "quality": 97,
+        "route": "commercial",
+        "budget": 6800,
+        "revenue": 9510,
+        "royalty": 42,
+        "releasedWeek": 34,
+        "releasedQuarter": 110
+      }
+    ],
+    "project": null,
+    "history": [
+      {
+        "week": 1,
+        "royalties": 0,
+        "debtRepaid": 820,
+        "financeText": "איתי החזיר 820 ₪ מקרן החוב. זהו החזר הלוואה, לא הוצאה נוספת.",
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 560 ₪.",
+            "cashDelta": 560,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״נסיעה בלי לשאול״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 3,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 560,
+          "expenses": 430,
+          "cash": -670,
+          "wealth": 130,
+          "reputation": 0,
+          "craft": 5,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 29,
+        "scoreAfter": 33,
+        "gapBefore": 0,
+        "gapAfter": 4,
+        "gapChange": 4,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט",
+        "dueWeek": 3
+      },
+      {
+        "week": 2,
+        "royalties": 0,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 560 ₪.",
+            "cashDelta": 560,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״נסיעה בלי לשאול״ בעלות 430 ₪. האיכות כרגע 53.",
+            "cashDelta": -430,
+            "craftDelta": 4,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 560,
+          "expenses": 760,
+          "cash": -200,
+          "wealth": -200,
+          "reputation": 0,
+          "craft": 6,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 33,
+        "scoreAfter": 34,
+        "gapBefore": 4,
+        "gapAfter": 11,
+        "gapChange": 7,
+        "nextPlan": "להתאושש לפני ההפקה הבאה: משמרת צילום בתשלום + ערב עם חברים מחוץ לתעשייה + עריכה ובכורה לסרט",
+        "dueWeek": 4
+      },
+      {
+        "week": 3,
+        "royalties": 34,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתאושש לפני ההפקה הבאה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 560 ₪.",
+            "cashDelta": 560,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״נסיעה בלי לשאול״ יצא: 65 איכות, 1,390 ₪ הכנסות ו־16 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 1170,
+            "craftDelta": 0,
+            "reputationDelta": 16,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1984,
+          "expenses": 550,
+          "cash": 1434,
+          "wealth": 1434,
+          "reputation": 16,
+          "craft": 2,
+          "contacts": 1,
+          "happiness": 17,
+          "films": 1
+        },
+        "scoreBefore": 34,
+        "scoreAfter": 66,
+        "gapBefore": 11,
+        "gapAfter": -16,
+        "gapChange": -27,
+        "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש + סדנת בימוי ותרגול",
+        "dueWeek": 5
+      },
+      {
+        "week": 4,
+        "royalties": 34,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 850 ₪.",
+            "cashDelta": 850,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״סליחה, זה התור שלי״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 3,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 884,
+          "expenses": 500,
+          "cash": 384,
+          "wealth": 384,
+          "reputation": 1,
+          "craft": 12,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 66,
+        "scoreAfter": 71,
+        "gapBefore": -16,
+        "gapAfter": 13,
+        "gapChange": 29,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + סדנת בימוי ותרגול + יום צילום לסרט",
+        "dueWeek": 6
+      },
+      {
+        "week": 5,
+        "royalties": 34,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "לקוח קיצץ את יום הצילום; איתי הכניס רק 468 ₪.",
+            "cashDelta": 468,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״סליחה, זה התור שלי״ בעלות 430 ₪. האיכות כרגע 57.",
+            "cashDelta": -430,
+            "craftDelta": 4,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 502,
+          "expenses": 850,
+          "cash": -348,
+          "wealth": -348,
+          "reputation": 1,
+          "craft": 13,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 71,
+        "scoreAfter": 75,
+        "gapBefore": 13,
+        "gapAfter": 24,
+        "gapChange": 11,
+        "nextPlan": "להוציא סרט לבכורה: משמרת צילום בתשלום + עריכה ובכורה לסרט",
+        "dueWeek": 7
+      },
+      {
+        "week": 6,
+        "royalties": 69,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להוציא סרט לבכורה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם משמרת והכניס 850 ₪.",
+            "cashDelta": 850,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״סליחה, זה התור שלי״ יצא: 69 איכות, 1,454 ₪ הכנסות ו־16 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 1234,
+            "craftDelta": 0,
+            "reputationDelta": 16,
+            "contactsDelta": 0
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 2373,
+          "expenses": 640,
+          "cash": 1733,
+          "wealth": 1733,
+          "reputation": 17,
+          "craft": 9,
+          "contacts": 1,
+          "happiness": 3,
+          "films": 1
+        },
+        "scoreBefore": 47,
+        "scoreAfter": 57,
+        "gapBefore": 22,
+        "gapAfter": 9,
+        "gapChange": -13,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + סדנת בימוי ותרגול + סגירת תסריט חדש",
+        "dueWeek": 8
+      },
+      {
+        "week": 7,
+        "royalties": 69,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "learn",
+            "label": "סדנת בימוי ותרגול",
+            "text": "סדנה ב־90 ₪ נתנה לאיתי 7 מיומנות, ורעיון חדש לסצנת הפתיחה.",
+            "cashDelta": -90,
+            "craftDelta": 7,
+            "reputationDelta": 1,
+            "contactsDelta": 0
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״תחנה אחת לפני הבית״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 3,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1449,
+          "expenses": 500,
+          "cash": 949,
+          "wealth": 949,
+          "reputation": 1,
+          "craft": 12,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 57,
+        "scoreAfter": 61,
+        "gapBefore": 9,
+        "gapAfter": 3,
+        "gapChange": -6,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט + ערב עם חברים מחוץ לתעשייה",
+        "dueWeek": 9
+      },
+      {
+        "week": 8,
+        "royalties": 52,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״תחנה אחת לפני הבית״ בעלות 2,800 ₪. האיכות כרגע 75.",
+            "cashDelta": -2800,
+            "craftDelta": 4,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1432,
+          "expenses": 3130,
+          "cash": -1698,
+          "wealth": -1698,
+          "reputation": 0,
+          "craft": 6,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 61,
+        "scoreAfter": 59,
+        "gapBefore": 3,
+        "gapAfter": 12,
+        "gapChange": 9,
+        "nextPlan": "להוציא סרט לבכורה: משמרת צילום בתשלום + עריכה ובכורה לסרט + פגישה עם מפיקה",
+        "dueWeek": 10
+      },
+      {
+        "week": 9,
+        "royalties": 92,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להוציא סרט לבכורה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״תחנה אחת לפני הבית״ יצא: 87 איכות, 4,878 ₪ הכנסות ו־18 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 4658,
+            "craftDelta": 0,
+            "reputationDelta": 18,
+            "contactsDelta": 0
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 5,
+            "contactsDelta": 6
+          }
+        ],
+        "delta": {
+          "income": 6350,
+          "expenses": 630,
+          "cash": 5720,
+          "wealth": 5720,
+          "reputation": 23,
+          "craft": 2,
+          "contacts": 7,
+          "happiness": 3,
+          "films": 1
+        },
+        "scoreBefore": 59,
+        "scoreAfter": 93,
+        "gapBefore": 12,
+        "gapAfter": -25,
+        "gapChange": -37,
+        "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש + פגישה עם מפיקה",
+        "dueWeek": 11
+      },
+      {
+        "week": 10,
+        "royalties": 75,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "לקוח קיצץ את יום הצילום; איתי הכניס רק 759 ₪.",
+            "cashDelta": 759,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״אהבה בקומה זמנית״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 3,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 5,
+            "contactsDelta": 6
+          }
+        ],
+        "delta": {
+          "income": 834,
+          "expenses": 490,
+          "cash": 344,
+          "wealth": 344,
+          "reputation": 5,
+          "craft": 5,
+          "contacts": 7,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 93,
+        "scoreAfter": 94,
+        "gapBefore": -25,
+        "gapAfter": -25,
+        "gapChange": 0,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט + פגישה עם מפיקה",
+        "dueWeek": 12
+      },
+      {
+        "week": 11,
+        "royalties": 67,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״אהבה בקומה זמנית״ בעלות 2,800 ₪. האיכות כרגע 72.",
+            "cashDelta": -2800,
+            "craftDelta": 4,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 5,
+            "contactsDelta": 6
+          }
+        ],
+        "delta": {
+          "income": 1447,
+          "expenses": 3210,
+          "cash": -1763,
+          "wealth": -1763,
+          "reputation": 5,
+          "craft": 6,
+          "contacts": 7,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 94,
+        "scoreAfter": 91,
+        "gapBefore": -25,
+        "gapAfter": -21,
+        "gapChange": 4,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + פגישה עם מפיקה + עריכה ובכורה לסרט",
+        "dueWeek": 13
+      },
+      {
+        "week": 12,
+        "royalties": 77,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 5,
+            "contactsDelta": 6
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״אהבה בקומה זמנית״ יצא: 84 איכות, 4,743 ₪ הכנסות ו־18 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 4523,
+            "craftDelta": 0,
+            "reputationDelta": 18,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 6200,
+          "expenses": 630,
+          "cash": 5570,
+          "wealth": 5570,
+          "reputation": 23,
+          "craft": 2,
+          "contacts": 7,
+          "happiness": 3,
+          "films": 1
+        },
+        "scoreBefore": 91,
+        "scoreAfter": 99,
+        "gapBefore": -21,
+        "gapAfter": -30,
+        "gapChange": -9,
+        "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש + פגישה עם מפיקה",
+        "dueWeek": 14
+      },
+      {
+        "week": 13,
+        "royalties": 71,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״הדרקון מהדוד שמש״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 3,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 6
+          }
+        ],
+        "delta": {
+          "income": 1451,
+          "expenses": 490,
+          "cash": 961,
+          "wealth": 961,
+          "reputation": 0,
+          "craft": 5,
+          "contacts": 7,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 72,
+        "scoreAfter": 72,
+        "gapBefore": 4,
+        "gapAfter": 3,
+        "gapChange": -1,
+        "nextPlan": "להתאושש לפני ההפקה הבאה: משמרת צילום בתשלום + ערב עם חברים מחוץ לתעשייה + יום צילום לסרט",
+        "dueWeek": 15
+      },
+      {
+        "week": 14,
+        "royalties": 61,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתאושש לפני ההפקה הבאה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "לקוח קיצץ את יום הצילום; איתי הכניס רק 759 ₪.",
+            "cashDelta": 759,
+            "craftDelta": 2,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״הדרקון מהדוד שמש״ בעלות 6,500 ₪. האיכות כרגע 80.",
+            "cashDelta": -6500,
+            "craftDelta": 1,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 820,
+          "expenses": 6830,
+          "cash": -6010,
+          "wealth": -6010,
+          "reputation": 0,
+          "craft": 3,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 72,
+        "scoreAfter": 68,
+        "gapBefore": 3,
+        "gapAfter": 6,
+        "gapChange": 3,
+        "nextPlan": "להוציא סרט לבכורה: משמרת צילום בתשלום + עריכה ובכורה לסרט",
+        "dueWeek": 16
+      },
+      {
+        "week": 15,
+        "royalties": 78,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להוציא סרט לבכורה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״הדרקון מהדוד שמש״ יצא: 92 איכות, 9,110 ₪ הכנסות ו־19 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 8890,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 10568,
+          "expenses": 550,
+          "cash": 10018,
+          "wealth": 10018,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": 3,
+          "films": 1
+        },
+        "scoreBefore": 68,
+        "scoreAfter": 97,
+        "gapBefore": 6,
+        "gapAfter": -25,
+        "gapChange": -31,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + פגישה עם מפיקה + סגירת תסריט חדש",
+        "dueWeek": 17
+      },
+      {
+        "week": 16,
+        "royalties": 72,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 6
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״חלון לכיוון אחר״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1452,
+          "expenses": 490,
+          "cash": 962,
+          "wealth": 962,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 7,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 97,
+        "scoreAfter": 98,
+        "gapBefore": -25,
+        "gapAfter": -27,
+        "gapChange": -2,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט",
+        "dueWeek": 18
+      },
+      {
+        "week": 17,
+        "royalties": 42,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״חלון לכיוון אחר״ בעלות 6,500 ₪. האיכות כרגע 81.",
+            "cashDelta": -6500,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1422,
+          "expenses": 6830,
+          "cash": -5408,
+          "wealth": -5408,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 98,
+        "scoreAfter": 92,
+        "gapBefore": -27,
+        "gapAfter": -22,
+        "gapChange": 5,
+        "nextPlan": "להוציא סרט לבכורה: משמרת צילום בתשלום + עריכה ובכורה לסרט",
+        "dueWeek": 19
+      },
+      {
+        "week": 18,
+        "royalties": 83,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להוציא סרט לבכורה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״חלון לכיוון אחר״ יצא: 93 איכות, 9,190 ₪ הכנסות ו־19 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 8970,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 10653,
+          "expenses": 550,
+          "cash": 10103,
+          "wealth": 10103,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": 3,
+          "films": 1
+        },
+        "scoreBefore": 92,
+        "scoreAfter": 100,
+        "gapBefore": -22,
+        "gapAfter": -26,
+        "gapChange": -4,
+        "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש + פגישה עם מפיקה",
+        "dueWeek": 20
+      },
+      {
+        "week": 19,
+        "royalties": 66,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״מבצע חניה כפולה״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1446,
+          "expenses": 410,
+          "cash": 1036,
+          "wealth": 1036,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 75,
+        "scoreAfter": 77,
+        "gapBefore": -5,
+        "gapAfter": -8,
+        "gapChange": -3,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט",
+        "dueWeek": 21
+      },
+      {
+        "week": 20,
+        "royalties": 46,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״מבצע חניה כפולה״ בעלות 6,500 ₪. האיכות כרגע 84.",
+            "cashDelta": -6500,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1426,
+          "expenses": 6830,
+          "cash": -5404,
+          "wealth": -5404,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 77,
+        "scoreAfter": 73,
+        "gapBefore": -8,
+        "gapAfter": -4,
+        "gapChange": 4,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + פגישה עם מפיקה",
+        "dueWeek": 22
+      },
+      {
+        "week": 21,
+        "royalties": 40,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 6
+          }
+        ],
+        "delta": {
+          "income": 1420,
+          "expenses": 410,
+          "cash": 1010,
+          "wealth": 1010,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 7,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 73,
+        "scoreAfter": 73,
+        "gapBefore": -4,
+        "gapAfter": -5,
+        "gapChange": -1,
+        "nextPlan": "להוציא סרט לבכורה: משמרת צילום בתשלום + עריכה ובכורה לסרט",
+        "dueWeek": 23
+      },
+      {
+        "week": 22,
+        "royalties": 71,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להוציא סרט לבכורה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״מבצע חניה כפולה״ יצא: 96 איכות, 9,430 ₪ הכנסות ו־20 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 9210,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 10881,
+          "expenses": 550,
+          "cash": 10331,
+          "wealth": 10331,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": 3,
+          "films": 1
+        },
+        "scoreBefore": 73,
+        "scoreAfter": 99,
+        "gapBefore": -5,
+        "gapAfter": -30,
+        "gapChange": -25,
+        "nextPlan": "להתאושש לפני ההפקה הבאה: משמרת צילום בתשלום + ערב עם חברים מחוץ לתעשייה",
+        "dueWeek": 24
+      },
+      {
+        "week": 23,
+        "royalties": 71,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתאושש לפני ההפקה הבאה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1451,
+          "expenses": 330,
+          "cash": 1121,
+          "wealth": 1121,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 99,
+        "scoreAfter": 100,
+        "gapBefore": -30,
+        "gapAfter": -31,
+        "gapChange": -1,
+        "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש + פגישה עם מפיקה",
+        "dueWeek": 25
+      },
+      {
+        "week": 24,
+        "royalties": 44,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״השיחה שלא הגיעה״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 6
+          }
+        ],
+        "delta": {
+          "income": 1424,
+          "expenses": 490,
+          "cash": 934,
+          "wealth": 934,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 7,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 77,
+        "scoreAfter": 77,
+        "gapBefore": -10,
+        "gapAfter": -10,
+        "gapChange": 0,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט + ערב עם חברים מחוץ לתעשייה",
+        "dueWeek": 26
+      },
+      {
+        "week": 25,
+        "royalties": 44,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״השיחה שלא הגיעה״ בעלות 6,500 ₪. האיכות כרגע 78.",
+            "cashDelta": -6500,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1424,
+          "expenses": 6830,
+          "cash": -5406,
+          "wealth": -5406,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 77,
+        "scoreAfter": 75,
+        "gapBefore": -10,
+        "gapAfter": -8,
+        "gapChange": 2,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + פגישה עם מפיקה + עריכה ובכורה לסרט",
+        "dueWeek": 27
+      },
+      {
+        "week": 26,
+        "royalties": 75,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 6
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״השיחה שלא הגיעה״ יצא: 90 איכות, 8,950 ₪ הכנסות ו־19 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 8730,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 10405,
+          "expenses": 630,
+          "cash": 9775,
+          "wealth": 9775,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 7,
+          "happiness": 3,
+          "films": 1
+        },
+        "scoreBefore": 72,
+        "scoreAfter": 97,
+        "gapBefore": 5,
+        "gapAfter": -20,
+        "gapChange": -25,
+        "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש",
+        "dueWeek": 28
+      },
+      {
+        "week": 27,
+        "royalties": 75,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "לקוח קיצץ את יום הצילום; איתי הכניס רק 759 ₪.",
+            "cashDelta": 759,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״מחר תתקשרי את״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 834,
+          "expenses": 410,
+          "cash": 424,
+          "wealth": 424,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 97,
+        "scoreAfter": 97,
+        "gapBefore": -20,
+        "gapAfter": -17,
+        "gapChange": 3,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + פגישה עם מפיקה",
+        "dueWeek": 29
+      },
+      {
+        "week": 28,
+        "royalties": 48,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לחזק את הקריירה לקראת הסרט הבא",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 6
+          }
+        ],
+        "delta": {
+          "income": 1428,
+          "expenses": 410,
+          "cash": 1018,
+          "wealth": 1018,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 7,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 97,
+        "scoreAfter": 96,
+        "gapBefore": -17,
+        "gapAfter": -16,
+        "gapChange": 1,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט + ערב עם חברים מחוץ לתעשייה",
+        "dueWeek": 30
+      },
+      {
+        "week": 29,
+        "royalties": 48,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״מחר תתקשרי את״ בעלות 6,500 ₪. האיכות כרגע 86.",
+            "cashDelta": -6500,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1428,
+          "expenses": 6830,
+          "cash": -5402,
+          "wealth": -5402,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 1,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 96,
+        "scoreAfter": 95,
+        "gapBefore": -16,
+        "gapAfter": -15,
+        "gapChange": 1,
+        "nextPlan": "להוציא סרט לבכורה: משמרת צילום בתשלום + עריכה ובכורה לסרט + פגישה עם מפיקה",
+        "dueWeek": 31
+      },
+      {
+        "week": 30,
+        "royalties": 80,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להוציא סרט לבכורה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 1
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״מחר תתקשרי את״ יצא: 98 איכות, 9,590 ₪ הכנסות ו־20 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 9370,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 2
+          }
+        ],
+        "delta": {
+          "income": 11050,
+          "expenses": 630,
+          "cash": 10420,
+          "wealth": 10420,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 3,
+          "happiness": 3,
+          "films": 1
+        },
+        "scoreBefore": 95,
+        "scoreAfter": 99,
+        "gapBefore": -15,
+        "gapAfter": -19,
+        "gapChange": -4,
+        "nextPlan": "להתחיל סרט חדש: משמרת צילום בתשלום + סגירת תסריט חדש + פגישה עם מפיקה",
+        "dueWeek": 32
+      },
+      {
+        "week": 31,
+        "royalties": 80,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתחיל סרט חדש",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "develop",
+            "label": "סגירת תסריט חדש",
+            "text": "איתי סגר תסריט ל״תעלומת ארגז הארטיקים״ ב־80 ₪. הצילומים הם היעד הבא.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1460,
+          "expenses": 490,
+          "cash": 970,
+          "wealth": 970,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 0,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 99,
+        "scoreAfter": 99,
+        "gapBefore": -19,
+        "gapAfter": -19,
+        "gapChange": 0,
+        "nextPlan": "לסיים את הצילומים: משמרת צילום בתשלום + יום צילום לסרט + פגישה עם מפיקה",
+        "dueWeek": 33
+      },
+      {
+        "week": 32,
+        "royalties": 53,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "לסיים את הצילומים",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "shoot",
+            "label": "יום צילום לסרט",
+            "text": "איתי צילם את ״תעלומת ארגז הארטיקים״ בעלות 6,500 ₪. האיכות כרגע 85.",
+            "cashDelta": -6500,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1433,
+          "expenses": 6910,
+          "cash": -5477,
+          "wealth": -5477,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 0,
+          "happiness": -5,
+          "films": 0
+        },
+        "scoreBefore": 99,
+        "scoreAfter": 97,
+        "gapBefore": -19,
+        "gapAfter": -17,
+        "gapChange": 2,
+        "nextPlan": "להתאושש לפני ההפקה הבאה: משמרת צילום בתשלום + ערב עם חברים מחוץ לתעשייה",
+        "dueWeek": 34
+      },
+      {
+        "week": 33,
+        "royalties": 53,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להתאושש לפני ההפקה הבאה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "rest",
+            "label": "ערב עם חברים מחוץ לתעשייה",
+            "text": "איתי יצא לערב עם חברים. בלי עבודה ועם עוד 14 אושר.",
+            "cashDelta": 0,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 1433,
+          "expenses": 330,
+          "cash": 1103,
+          "wealth": 1103,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 0,
+          "happiness": 9,
+          "films": 0
+        },
+        "scoreBefore": 97,
+        "scoreAfter": 98,
+        "gapBefore": -17,
+        "gapAfter": -18,
+        "gapChange": -1,
+        "nextPlan": "להוציא סרט לבכורה: משמרת צילום בתשלום + עריכה ובכורה לסרט + פגישה עם מפיקה",
+        "dueWeek": 35
+      },
+      {
+        "week": 34,
+        "royalties": 84,
+        "debtRepaid": 0,
+        "financeText": "",
+        "goal": "להוציא סרט לבכורה",
+        "actions": [
+          {
+            "id": "work",
+            "label": "משמרת צילום בתשלום",
+            "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+            "cashDelta": 1380,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "release",
+            "label": "עריכה ובכורה לסרט",
+            "text": "״תעלומת ארגז הארטיקים״ יצא: 97 איכות, 9,510 ₪ הכנסות ו־20 מוניטין. הבכורה הצליחה.",
+            "cashDelta": 9290,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          },
+          {
+            "id": "network",
+            "label": "פגישה עם מפיקה",
+            "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+            "cashDelta": -80,
+            "craftDelta": 0,
+            "reputationDelta": 0,
+            "contactsDelta": 0
+          }
+        ],
+        "delta": {
+          "income": 10974,
+          "expenses": 630,
+          "cash": 10344,
+          "wealth": 10344,
+          "reputation": 0,
+          "craft": 0,
+          "contacts": 0,
+          "happiness": 2,
+          "films": 1
+        },
+        "scoreBefore": 75,
+        "scoreAfter": 99,
+        "gapBefore": 5,
+        "gapAfter": -19,
+        "gapChange": -24,
+        "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + פגישה עם מפיקה + סגירת תסריט חדש",
+        "dueWeek": 36
+      }
+    ],
+    "weekStartGap": -19,
+    "seasonFilmBase": 9,
+    "initializedWeek": 1,
+    "lastReportWeek": 34,
+    "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + פגישה עם מפיקה + סגירת תסריט חדש",
+    "dueWeek": 36,
+    "plan": {
+      "week": 35,
+      "goal": "לחזק את הקריירה לקראת הסרט הבא",
+      "actions": [
+        {
+          "id": "work",
+          "label": "משמרת צילום בתשלום"
+        },
+        {
+          "id": "network",
+          "label": "פגישה עם מפיקה"
+        },
+        {
+          "id": "develop",
+          "label": "סגירת תסריט חדש"
+        }
+      ]
+    }
+  },
+  "status": "playing",
+  "ending": "",
+  "weeklySummary": {
+    "income": 24724,
+    "expenses": 2876,
+    "net": 21848,
+    "royalties": 133,
+    "rent": 320,
+    "text": "מחיה: 238 ₪ · ריבית: 0 ₪ · תמלוגים: 133 ₪ · שכירות מנכסים: 320 ₪. שבוע המפתח הסתיים בתוך 12 חודשי הפקה; יתר התקופה היא שגרה מאוזנת.",
+    "fundingResults": [],
+    "festivalResults": [],
+    "rivalReport": {
+      "week": 34,
+      "royalties": 84,
+      "debtRepaid": 0,
+      "financeText": "",
+      "goal": "להוציא סרט לבכורה",
+      "actions": [
+        {
+          "id": "work",
+          "label": "משמרת צילום בתשלום",
+          "text": "איתי צילם פרסומת והכניס 1,380 ₪.",
+          "cashDelta": 1380,
+          "craftDelta": 0,
+          "reputationDelta": 0,
+          "contactsDelta": 0
+        },
+        {
+          "id": "release",
+          "label": "עריכה ובכורה לסרט",
+          "text": "״תעלומת ארגז הארטיקים״ יצא: 97 איכות, 9,510 ₪ הכנסות ו־20 מוניטין. הבכורה הצליחה.",
+          "cashDelta": 9290,
+          "craftDelta": 0,
+          "reputationDelta": 0,
+          "contactsDelta": 0
+        },
+        {
+          "id": "network",
+          "label": "פגישה עם מפיקה",
+          "text": "איתי נפגש עם מפיקה: 80 ₪, עוד 6 קשרים ו־5 מוניטין.",
+          "cashDelta": -80,
+          "craftDelta": 0,
+          "reputationDelta": 0,
+          "contactsDelta": 0
+        }
+      ],
+      "delta": {
+        "income": 10974,
+        "expenses": 630,
+        "cash": 10344,
+        "wealth": 10344,
+        "reputation": 0,
+        "craft": 0,
+        "contacts": 0,
+        "happiness": 2,
+        "films": 1
+      },
+      "scoreBefore": 75,
+      "scoreAfter": 99,
+      "gapBefore": 5,
+      "gapAfter": -19,
+      "gapChange": -24,
+      "nextPlan": "לחזק את הקריירה לקראת הסרט הבא: משמרת צילום בתשלום + פגישה עם מפיקה + סגירת תסריט חדש",
+      "dueWeek": 36
+    },
+    "lifeReport": {
+      "quarter": 114,
+      "durationQuarters": 4,
+      "headline": "נטפאוז: סדרה ישראלית מפתיעה בטופ 10 (+13.2% בסבב).",
+      "changes": [
+        {
+          "id": "takela",
+          "title": "טייקסלה",
+          "change": 6.3
+        },
+        {
+          "id": "netpause",
+          "title": "נטפאוז",
+          "change": 13.2
+        },
+        {
+          "id": "pomela",
+          "title": "פומלה",
+          "change": 2.9
+        }
+      ],
+      "valueChange": 35,
+      "relationshipChange": -2
+    }
+  },
+  "rng": 1466633150,
+  "used": {
+    "overtime": 0,
+    "work": 0,
+    "course": 0,
+    "practice": 0,
+    "network": 0,
+    "mingle": 0,
+    "family": 0,
+    "fun": 0,
+    "meal": 0,
+    "borrow": 0,
+    "pitch": 0,
+    "wedding": 0,
+    "ad": 0,
+    "lecture": 0,
+    "teach_masterclass": 0,
+    "jury": 0
+  },
+  "weeklyTotals": {
+    "income": 0,
+    "expenses": 7100
+  },
+  "crisisWeeks": 0,
+  "life": {
+    "quarters": 114,
+    "chapterProjectId": null,
+    "cityId": "los_angeles",
+    "retired": false,
+    "retirementSummary": "",
+    "productionLoad": 0,
+    "usedCityOffer": false,
+    "usedCityLeisure": false,
+    "eventHistory": [
+      "tel_aviv_shared_bills",
+      "classic_3",
+      "classic_1",
+      "tel_aviv_station_meeting",
+      "tel_aviv_rooftop_screening",
+      "tel_aviv_bilingual_joke",
+      "athens_balcony_office"
+    ],
+    "chaptersWon": 4,
+    "chaptersCompleted": 6,
+    "lastRecordedChapter": 6,
+    "market": {
+      "rng": 2678291665,
+      "quarter": 114,
+      "prices": {
+        "takela": 17,
+        "netpause": 103,
+        "pomela": 252
+      },
+      "previousPrices": {
+        "takela": 16,
+        "netpause": 91,
+        "pomela": 245
+      },
+      "holdings": {
+        "takela": 0,
+        "netpause": 0,
+        "pomela": 5
+      },
+      "costBasis": {
+        "takela": 0,
+        "netpause": 0,
+        "pomela": 1237
+      },
+      "realizedProfit": 0,
+      "trades": 0,
+      "headline": "נטפאוז: סדרה ישראלית מפתיעה בטופ 10 (+13.2% בסבב)."
+    },
+    "relationship": {
+      "partnerId": "maya",
+      "closeness": 29,
+      "usedDate": false
+    }
+  },
+  "locationBoards": {
+    "week": 35,
+    "rng": 34822370,
+    "cafe": {
+      "offerIds": [
+        "editor_coffee",
+        "last_minute_clip",
+        "film_quiz"
+      ],
+      "usedIds": []
+    },
+    "gear": {
+      "offerIds": [
+        "manufacturer_demo",
+        "gear_shift",
+        "sponsor_demo"
+      ],
+      "usedIds": []
+    }
+  },
+  "festivalCircuit": {
+    "rng": 3144134318,
+    "pending": [],
+    "history": []
+  }
+}
