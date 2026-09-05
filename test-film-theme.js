@@ -6,6 +6,8 @@ const vm = require('node:vm');
 const source = fs.readFileSync(path.join(__dirname, 'theme.js'), 'utf8');
 const KEY = 'haim-baseret-theme-v1';
 const COLORS = { classic: '#dedabd', light: '#f7f3e9', dark: '#192124' };
+const LABELS = { classic: 'קלאסי', light: 'בהיר', dark: 'כהה' };
+const ORDER = ['classic', 'light', 'dark'];
 const tests = [];
 const test = (name, run) => tests.push({ name, run });
 
@@ -32,7 +34,7 @@ function browser(options = {}) {
     readyState: options.readyState || 'loading', documentElement: { dataset: {} },
     querySelector(selector) { assert.equal(selector, 'meta[name="theme-color"]'); return options.noMeta ? null : meta; },
     querySelectorAll(selector) {
-      assert.equal(selector, '#theme-select, select[data-theme-select]');
+      assert.ok(selector.includes('[data-theme-toggle]'), 'controls use the delegated toggle marker');
       return nodes.filter(node => node.matches(selector));
     },
     addEventListener(type, fn, config) { add(documentEvents, type, fn, config); }
@@ -44,25 +46,47 @@ function browser(options = {}) {
   vm.runInNewContext(source, { window, document }, { filename: 'theme.js' });
   return {
     data, calls, document, window, meta, storage, documentEvents, windowEvents,
-    select(id = 'theme-select', marked = true) {
-      const node = { id, tagName: 'SELECT', value: 'classic', matches: () => id === 'theme-select' || marked };
+    button(id = 'theme-toggle', marked = true) {
+      const attributes = {};
+      const node = {
+        id, tagName: 'BUTTON', type: 'button', disabled: false, dataset: {}, innerHTML: '',
+        matches: selector => marked && selector.includes('[data-theme-toggle]'),
+        closest(selector) { return this.matches(selector) ? this : null; },
+        setAttribute(name, value) { attributes[name] = String(value); },
+        getAttribute(name) { return attributes[name] ?? null; },
+        get title() { return attributes.title || ''; },
+        set title(value) { attributes.title = String(value); }
+      };
       nodes.push(node); return node;
     },
+    child(button, tagName = 'svg') {
+      return { tagName, closest(selector) { return button.closest(selector); } };
+    },
     ready() { document.readyState = 'interactive'; emit(documentEvents, 'DOMContentLoaded'); },
-    change(target) { const event = { target, preventDefault() { throw Error('Native input was intercepted'); } }; emit(documentEvents, 'change', event); },
+    click(target) { emit(documentEvents, 'click', { target, preventDefault() {} }); },
     storageEvent(event) { emit(windowEvents, 'storage', { storageArea: storage, ...event }); }
   };
 }
+function checkButton(button, theme) {
+  const next = ORDER[(ORDER.indexOf(theme) + 1) % ORDER.length];
+  assert.equal(button.dataset.theme, theme, 'button metadata reflects the actual current theme');
+  for (const attribute of ['title', 'aria-label']) {
+    const text = button.getAttribute(attribute);
+    assert.ok(text && text.includes(LABELS[theme]), `${attribute} names the current theme`);
+    assert.ok(text.includes(LABELS[next]), `${attribute} names the next theme`);
+    assert.ok(text.indexOf(LABELS[theme]) < text.indexOf(LABELS[next]), `${attribute} distinguishes current from next`);
+  }
+  assert.match(button.innerHTML, /<svg\b/, 'button displays an icon');
+}
 
-test('stored preferences apply before DOMContentLoaded and do not write during startup', () => {
+test('stored preferences apply before DOMContentLoaded and synchronize accessible buttons without startup writes', () => {
   for (const [theme, color] of Object.entries(COLORS)) {
     const b = browser({ stored: theme });
     assert.equal(b.document.readyState, 'loading');
     assert.equal(b.document.documentElement.dataset.theme, theme);
     assert.equal(b.meta.content, color);
     assert.deepEqual(b.calls, [['get', KEY]]);
-    const select = b.select(); b.ready();
-    assert.equal(select.value, theme);
+    const button = b.button(); b.ready(); checkButton(button, theme);
   }
 });
 
@@ -72,103 +96,130 @@ test('missing or invalid preferences safely use classic without rewriting storag
     assert.equal(b.document.documentElement.dataset.theme, 'classic');
     assert.equal(b.meta.content, COLORS.classic);
     assert.ok(!b.calls.some(call => call[0] === 'set'));
+    const button = b.button(); b.ready(); checkButton(button, 'classic');
   }
 });
 
-test('blocked storage access, reads or writes never prevent a live theme change', () => {
+test('blocked storage access, reads or writes never prevent the complete live theme cycle', () => {
   for (const options of [{ getterBlocked: true }, { readBlocked: true }, { writeBlocked: true }]) {
-    const b = browser(options), select = b.select(); b.ready();
-    select.value = 'dark'; b.change(select);
-    assert.equal(b.document.documentElement.dataset.theme, 'dark');
-    assert.equal(b.meta.content, COLORS.dark);
-    assert.equal(select.value, 'dark');
+    const b = browser(options), button = b.button(); b.ready();
+    for (const theme of ['light', 'dark', 'classic']) {
+      b.click(button);
+      assert.equal(b.document.documentElement.dataset.theme, theme);
+      assert.equal(b.meta.content, COLORS[theme]); checkButton(button, theme);
+    }
     assert.ok(b.calls.every(call => call[1] === KEY));
   }
 });
 
-test('native change events update immediately, persist only the preference and survive reload', () => {
-  const b = browser(), select = b.select(); b.ready();
-  const savedGame = b.data.get('kobi-lives-in-film-v1');
-  for (const theme of ['light', 'dark', 'classic']) {
-    select.value = theme; b.change(select);
+test('each native click advances one step through full cycles, persists only the preference and survives reload', () => {
+  const b = browser(), button = b.button(); b.ready();
+  const savedGame = b.data.get('kobi-lives-in-film-v1'), icons = new Map();
+  checkButton(button, 'classic'); icons.set('classic', button.innerHTML);
+  for (const theme of ['light', 'dark', 'classic', 'light', 'dark', 'classic']) {
+    const writes = b.calls.filter(call => call[0] === 'set').length;
+    b.click(button);
     assert.equal(b.document.documentElement.dataset.theme, theme);
-    assert.equal(b.meta.content, COLORS[theme]);
+    assert.equal(b.meta.content, COLORS[theme]); checkButton(button, theme);
     assert.equal(b.data.get(KEY), theme);
+    assert.equal(b.calls.filter(call => call[0] === 'set').length, writes + 1, 'one click causes one preference write');
     assert.equal(browser({ stored: b.data.get(KEY) }).document.documentElement.dataset.theme, theme);
+    if (icons.has(theme)) assert.equal(button.innerHTML, icons.get(theme), 'returning to a theme restores its icon');
+    icons.set(theme, button.innerHTML);
   }
+  assert.equal(new Set(icons.values()).size, 3, 'all three theme states have distinct icons');
   assert.equal(b.data.get('kobi-lives-in-film-v1'), savedGame);
   assert.equal(b.data.get('kobi-lives-in-film-sound'), 'true');
   assert.ok(b.calls.every(call => call[1] === KEY));
-  assert.deepEqual([...b.documentEvents.keys()].sort(), ['DOMContentLoaded', 'change']);
-  assert.ok(!b.documentEvents.has('keydown') && !b.documentEvents.has('click'), 'keyboard selection remains browser-native');
+  assert.deepEqual([...b.documentEvents.keys()].sort(), ['DOMContentLoaded', 'click']);
+  assert.ok(!b.documentEvents.has('keydown') && !b.documentEvents.has('change'), 'button keyboard activation uses its native click, without duplicate custom handlers');
 });
 
-test('late dialog controls synchronize and changes stay consistent with the navigation selector', () => {
-  const b = browser({ stored: 'dark' }), nav = b.select(); b.ready();
-  const dialog = b.select('welcome-theme-select');
-  b.window.FilmTheme.sync();
-  assert.equal(dialog.value, 'dark');
-  dialog.value = 'light'; b.change(dialog);
-  assert.equal(nav.value, 'light');
-  nav.value = 'classic'; b.change(nav);
-  assert.equal(dialog.value, 'classic');
-  assert.equal(b.data.get(KEY), 'classic');
+test('clicking an SVG or nested path reaches its parent toggle through closest exactly once', () => {
+  const b = browser(), button = b.button(); b.ready();
+  b.click(b.child(button, 'svg')); checkButton(button, 'light');
+  b.click(b.child(button, 'path')); checkButton(button, 'dark');
+  b.click(button); checkButton(button, 'classic');
+  assert.deepEqual(b.calls.filter(call => call[0] === 'set'), [
+    ['set', KEY, 'light'], ['set', KEY, 'dark'], ['set', KEY, 'classic']
+  ]);
 });
 
-test('unrelated controls and invalid option values cannot change the theme or save data', () => {
-  const b = browser({ stored: 'dark' }), nav = b.select(), unrelated = b.select('difficulty', false); b.ready();
+test('late welcome buttons synchronize and clicks update both controls without rebinding', () => {
+  const b = browser({ stored: 'dark' }), nav = b.button(); b.ready();
+  const dialog = b.button('welcome-theme-toggle'); b.window.FilmTheme.sync();
+  checkButton(dialog, 'dark'); checkButton(nav, 'dark');
+  b.click(dialog); checkButton(dialog, 'classic'); checkButton(nav, 'classic');
+  b.click(b.child(nav)); checkButton(dialog, 'light'); checkButton(nav, 'light');
+  assert.equal(b.documentEvents.get('click').length, 1, 'dynamic buttons share one delegated listener');
+  assert.equal(b.data.get(KEY), 'light');
+});
+
+test('unrelated controls and their children cannot change the theme or save data', () => {
+  const b = browser({ stored: 'dark' }), nav = b.button(), unrelated = b.button('difficulty', false); b.ready();
   const before = [...b.data];
-  unrelated.value = 'light'; b.change(unrelated);
-  b.change({ tagName: 'INPUT', value: 'light', matches: () => true });
-  nav.value = 'invalid'; b.change(nav);
-  assert.equal(b.document.documentElement.dataset.theme, 'dark');
-  assert.equal(nav.value, 'dark');
+  b.click(unrelated); b.click(b.child(unrelated));
+  b.click({ tagName: 'INPUT', closest: () => null });
+  assert.equal(b.document.documentElement.dataset.theme, 'dark'); checkButton(nav, 'dark');
   assert.deepEqual([...b.data], before);
+  assert.ok(!b.calls.some(call => call[0] === 'set'));
 });
 
-test('cross-tab updates synchronize controls without writing back or responding to game saves', () => {
-  const b = browser(), nav = b.select(); b.ready();
-  const dialog = b.select('welcome-theme-select'); b.window.FilmTheme.sync();
+test('disabled toggles and non-element click targets do not advance or persist a theme', () => {
+  const b = browser({ stored: 'dark' }), button = b.button(); b.ready();
+  const before = [...b.data]; button.disabled = true;
+  b.click(button); b.click(b.child(button)); b.click(null); b.click({});
+  checkButton(button, 'dark'); assert.deepEqual([...b.data], before);
+  assert.ok(!b.calls.some(call => call[0] === 'set'));
+  button.disabled = false; b.click(button); checkButton(button, 'classic');
+  assert.deepEqual(b.calls.filter(call => call[0] === 'set'), [['set', KEY, 'classic']]);
+});
+
+test('cross-tab updates synchronize labels and icons without writing back or responding to game saves', () => {
+  const b = browser(), nav = b.button(); b.ready();
+  const dialog = b.button('welcome-theme-toggle'); b.window.FilmTheme.sync();
   b.storageEvent({ key: KEY, newValue: 'dark' });
-  assert.equal(nav.value, 'dark'); assert.equal(dialog.value, 'dark');
-  assert.equal(b.meta.content, COLORS.dark);
+  checkButton(nav, 'dark'); checkButton(dialog, 'dark'); assert.equal(b.meta.content, COLORS.dark);
   b.storageEvent({ key: 'kobi-lives-in-film-v1', newValue: 'light' });
   b.storageEvent({ key: KEY, newValue: 'light', storageArea: {} });
-  assert.equal(nav.value, 'dark');
+  checkButton(nav, 'dark');
   assert.ok(!b.calls.some(call => call[0] === 'set'), 'storage events never create a feedback loop');
-  b.storageEvent({ key: KEY, newValue: 'unknown' });
-  assert.equal(nav.value, 'classic');
+  b.storageEvent({ key: KEY, newValue: 'unknown' }); checkButton(nav, 'classic');
   b.storageEvent({ key: KEY, newValue: 'light' });
-  b.storageEvent({ key: KEY, newValue: null });
-  assert.equal(nav.value, 'classic', 'removing the preference restores the default');
+  b.storageEvent({ key: KEY, newValue: null }); checkButton(nav, 'classic');
   b.storageEvent({ key: KEY, newValue: 'dark' });
-  b.storageEvent({ key: null, newValue: null });
-  assert.equal(nav.value, 'classic', 'clearing localStorage restores the default');
+  b.storageEvent({ key: null, newValue: null }); checkButton(nav, 'classic'); checkButton(dialog, 'classic');
+  b.storageEvent({ key: KEY, newValue: 'light' });
+  b.click(nav); checkButton(nav, 'dark'); checkButton(dialog, 'dark');
+  assert.deepEqual(b.calls.filter(call => call[0] === 'set'), [['set', KEY, 'dark']], 'click advances from the theme received from the other tab');
 });
 
 test('loading after DOM readiness still binds once; absent theme-color metadata is harmless', () => {
-  const b = browser({ readyState: 'complete', stored: 'dark', noMeta: true }), select = b.select();
-  b.window.FilmTheme.sync(); select.value = 'light'; b.change(select);
-  assert.equal(b.document.documentElement.dataset.theme, 'light');
+  const b = browser({ readyState: 'complete', stored: 'dark', noMeta: true }), button = b.button();
+  b.window.FilmTheme.sync(); b.click(button); checkButton(button, 'classic');
+  assert.equal(b.document.documentElement.dataset.theme, 'classic');
   assert.equal(b.calls.filter(call => call[0] === 'set').length, 1);
   assert.equal(b.documentEvents.has('DOMContentLoaded'), false);
 });
 
-test('HTML provides labeled native options and applies the controller before every stylesheet', () => {
+test('HTML provides native accessible toggle buttons and applies the controller before every stylesheet', () => {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  const ui = fs.readFileSync(path.join(__dirname, 'game-ui.js'), 'utf8');
   const script = html.match(/<script\b[^>]*src="theme\.js(?:\?v=[^" ]+)?"[^>]*><\/script>/);
   assert.ok(script, 'theme controller is loaded');
   assert.ok(!/\b(?:defer|async)\b|\btype\s*=/.test(script[0]), 'controller is a blocking classic script');
   const styles = [...html.matchAll(/<link\b[^>]*rel="stylesheet"[^>]*>/g)];
   assert.ok(styles.length > 0 && styles.every(style => script.index < style.index));
   assert.match(styles.at(-1)[0], /href="themes\.css(?:\?v=[^" ]+)?"/);
-  assert.match(html, /<label\b[^>]*for="theme-select"[^>]*>[^<]+<\/label>/);
-  const select = html.match(/<select\b[^>]*id="theme-select"[^>]*>([\s\S]*?)<\/select>/);
-  assert.ok(select, 'native keyboard-operable select exists');
-  assert.ok(!/\b(?:role|tabindex|disabled)=/.test(select[0]), 'native semantics and focus order are retained');
-  const options = [...select[1].matchAll(/<option value="([^"]+)">([^<]+)<\/option>/g)].map(match => [match[1], match[2]]);
-  assert.deepEqual(options, [['classic', 'קלאסי'], ['light', 'בהיר'], ['dark', 'כהה']]);
-  assert.match(html, /class="theme-control"/);
+  for (const [text, id] of [[html, 'theme-toggle'], [ui, 'welcome-theme-toggle']]) {
+    const button = text.match(new RegExp('<button\\b[^>]*id="' + id + '"[^>]*>[\\s\\S]*?<\\/button>'));
+    assert.ok(button, id + ' is a native keyboard-operable button');
+    assert.match(button[0], /\btype="button"/, 'theme toggle cannot submit the welcome form');
+    assert.match(button[0], /\bdata-theme-toggle\b/);
+    assert.match(button[0], /\baria-label="[^"]+"/);
+    assert.ok(!/\b(?:role|tabindex|disabled)=/.test(button[0]), 'native button semantics and focus order are retained');
+  }
+  assert.ok(!/<select\b[^>]*(?:id="(?:welcome-)?theme-select"|data-theme-select)/.test(html + ui), 'obsolete selects are not rendered');
 });
 
 test('static build and test runner explicitly include the theme runtime and regression suite', () => {

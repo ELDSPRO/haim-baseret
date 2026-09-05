@@ -113,32 +113,27 @@
   --shadow: 3px 3px 0 var(--ui-shadow-soft);
 }
 
-.theme-control {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  flex-shrink: 0;
-  font-size: 11px;
-  line-height: 1.4;
-}
-.theme-control select {
-  font: inherit;
+.theme-toggle {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
   color: var(--ui-ink, #26372f);
-  background: var(--ui-surface, #eae2c9);
-  border: 2px outset var(--ui-line, #a4b28c);
+  background: transparent;
+  border: 1px solid var(--ui-line, #a4b28c);
   border-radius: 0;
-  min-height: 36px;
-  padding: 5px 7px;
-  cursor: pointer;
-  max-width: 100%;
 }
-.theme-control select:focus-visible {
-  outline: 3px solid var(--ui-focus, #e7b775);
-  outline-offset: 3px;
-}
+.theme-toggle svg { width: 22px; height: 22px; }
+.site-header .theme-toggle { color: var(--ui-on-header, #f1e6bb); }
+.theme-toggle:hover { background: #8daac31a; }
+.theme-toggle:active { transform: translateY(1px); }
+.theme-toggle:focus-visible { outline: 3px solid #6098c0; outline-offset: 3px; }
+.site-header .theme-toggle:focus-visible { outline-color: #a9d3f0; }
 /* Palette changes are immediate, so text never changes ahead of its background. */
 .action { transition-property: transform, box-shadow; }
-.welcome-theme-control { justify-content: center; margin-top: 12px; }
+.welcome-theme-control { display: flex; justify-content: center; margin-top: 12px; }
 .site-header nav { flex-wrap: wrap; gap: 12px 18px; }
 .site-header { height: auto; min-height: 78px; padding-block: 12px; }
 
@@ -198,7 +193,5 @@ html:is([data-theme="light"], [data-theme="dark"]) .goal-track { background: #14
   .site-header { flex-wrap: wrap; padding-block: 12px 9px; gap: 10px; }
   .site-header .brand { margin-inline-end: auto; }
   .site-header nav { width: 100%; justify-content: space-between; gap: 6px; }
-  .theme-control { font-size: 11px; gap: 5px; }
-  .theme-control select { min-height: 40px; }
   .site-header .quiet-button, .site-header .icon-button { min-height: 40px; }
 }

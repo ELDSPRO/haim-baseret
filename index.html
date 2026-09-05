@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#dedabd">
 <meta name="description" content="חיים בסרט. משחק חיים קומי על כסף, חברים והחלום לעשות קולנוע ישראלי.">
 <title>חיים בסרט | משחק החיים של הקולנוע הישראלי</title>
-<script src="theme.js?v=5.2"></script>
+<script src="theme.js?v=5.3.1"></script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232e4540'/%3E%3Cpath d='M12 24h40v27H12zM12 13h40v9H12z' fill='%23efd690'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="game.css?v=5.2">
 <link rel="stylesheet" href="career.css?v=5.2.1">
@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="chapters.css?v=5.2">
 <link rel="stylesheet" href="encounters.css?v=5.2">
 <link rel="stylesheet" href="tutorial.css?v=5.3">
-<link rel="stylesheet" href="themes.css?v=5.2.1">
+<link rel="stylesheet" href="themes.css?v=5.3.1">
 <script src="film-industry.js" defer></script>
 <script src="film-life.js" defer></script>
 <script src="film-stories.js" defer></script>
@@ -26,14 +26,14 @@
 <script src="film-advice.js" defer></script>
 <script src="game-engine.js" defer></script>
 <script src="film-tutorial.js?v=5.3" defer></script>
-<script src="game-ui.js?v=5.3" defer></script>
+<script src="game-ui.js?v=5.3.1" defer></script>
 </head>
 <body>
 <div class="app-shell">
 <header class="site-header">
   <a class="brand" href="./" aria-label="חיים בסרט — בית"><span class="brand-mark" aria-hidden="true"><i></i></span><span><strong>חיים <em>בסרט.</em></strong><small>קולנוע ישראלי. החיים עצמם.</small></span></a>
   <nav aria-label="אפשרויות המשחק">
-    <div class="theme-control"><label for="theme-select">צבעים</label><select id="theme-select" data-theme-select><option value="classic">קלאסי</option><option value="light">בהיר</option><option value="dark">כהה</option></select></div>
+    <button type="button" class="theme-toggle" id="theme-toggle" data-theme-toggle aria-label="צבעים: קלאסי. מעבר למצב בהיר" title="צבעים: קלאסי. מעבר למצב בהיר"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 0 18h1.2a2 2 0 0 0 1.4-3.4 1.5 1.5 0 0 1 1.1-2.6H18a3 3 0 0 0 3-3 9 9 0 0 0-9-9Z"/><circle cx="7.5" cy="10" r=".8"/><circle cx="10" cy="6.8" r=".8"/><circle cx="14" cy="6.8" r=".8"/><circle cx="17" cy="10" r=".8"/></svg></button>
     <button class="quiet-button" id="help-button"><span aria-hidden="true">?</span> איך משחקים</button><button class="quiet-button" id="journal-button">יומן הפקה</button><button class="icon-button" id="sound-button" aria-label="הפעלת צלילים" title="הפעלת צלילים">♪</button><button class="quiet-button new-game-button" id="new-button">משחק חדש</button>
   </nav>
 </header>
