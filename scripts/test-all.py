@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SUITES = (
     'game', 'career', 'lifetime', 'chapters', 'expansion', 'industry',
     'setbacks', 'locations', 'life', 'local', 'festival-parallel',
-    'events', 'advice', 'network', 'workload',
+    'events', 'advice', 'network', 'workload', 'theme',
 )
 
 for suite in SUITES:

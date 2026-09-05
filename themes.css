@@ -1,0 +1,196 @@
+/* Classic uses the original colors in each declaration's fallback. */
+:root { color-scheme: light; }
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --ui-page: #f7f3e9;
+  --ui-surface: #fffdf7;
+  --ui-surface-alt: #f0ece2;
+  --ui-surface-inset: #e6e3d9;
+  --ui-surface-hover: #e7eddf;
+  --ui-surface-disabled: #e9e8e1;
+  --ui-ink: #29372f;
+  --ui-muted: #526157;
+  --ui-faint: #606b62;
+  --ui-line: #a0ac9f;
+  --ui-line-soft: #c4c9bd;
+  --ui-bevel-light: #fffef8;
+  --ui-bevel-dark: #778274;
+  --ui-shadow-soft: #26372f20;
+  --ui-shadow-strong: #1c302b55;
+  --ui-primary: #365c4e;
+  --ui-primary-hover: #294b3e;
+  --ui-on-primary: #fff8e8;
+  --ui-header: #2c433c;
+  --ui-on-header: #fff0ce;
+  --ui-header-muted: #c8d3c0;
+  --ui-accent: #7d581c;
+  --ui-accent-surface: #f3e5c5;
+  --ui-accent-line: #a88748;
+  --ui-positive: #356342;
+  --ui-positive-surface: #e3eddb;
+  --ui-positive-line: #7b996b;
+  --ui-negative: #993e30;
+  --ui-negative-surface: #f6e2db;
+  --ui-negative-line: #ba806e;
+  --ui-info: #365f76;
+  --ui-info-surface: #e2edf0;
+  --ui-info-line: #809da8;
+  --ui-purple: #72537e;
+  --ui-purple-surface: #eee4ef;
+  --ui-purple-line: #a589ad;
+  --ui-life: #855144;
+  --ui-life-surface: #f3e5d9;
+  --ui-life-line: #b08b73;
+  --ui-focus: #9a5916;
+  --ui-overlay: #172b25b3;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ui-page: #192124;
+  --ui-surface: #232d30;
+  --ui-surface-alt: #2c373a;
+  --ui-surface-inset: #172023;
+  --ui-surface-hover: #38453f;
+  --ui-surface-disabled: #283033;
+  --ui-ink: #f2ecdd;
+  --ui-muted: #bdc8bf;
+  --ui-faint: #aebcb2;
+  --ui-line: #738278;
+  --ui-line-soft: #4b5b54;
+  --ui-bevel-light: #8c9b90;
+  --ui-bevel-dark: #101719;
+  --ui-shadow-soft: #00000030;
+  --ui-shadow-strong: #00000070;
+  --ui-primary: #d9bd7e;
+  --ui-primary-hover: #ebce91;
+  --ui-on-primary: #202921;
+  --ui-header: #152024;
+  --ui-on-header: #f5e7c7;
+  --ui-header-muted: #bdccbf;
+  --ui-accent: #edc67f;
+  --ui-accent-surface: #3d3426;
+  --ui-accent-line: #a68e5c;
+  --ui-positive: #bbdca6;
+  --ui-positive-surface: #2b3b2d;
+  --ui-positive-line: #809d70;
+  --ui-negative: #ffb9a6;
+  --ui-negative-surface: #422e2a;
+  --ui-negative-line: #b98978;
+  --ui-info: #acd5eb;
+  --ui-info-surface: #293c46;
+  --ui-info-line: #7b9da9;
+  --ui-purple: #dfbde8;
+  --ui-purple-surface: #3c3143;
+  --ui-purple-line: #a18aad;
+  --ui-life: #edc1a9;
+  --ui-life-surface: #41362c;
+  --ui-life-line: #b19a7d;
+  --ui-focus: #f6cf7c;
+  --ui-overlay: #050b0de0;
+}
+
+/* Bridge the original shared palette to the semantic tokens. */
+:root:is([data-theme="light"], [data-theme="dark"]) {
+  --paper: var(--ui-page);
+  --card: var(--ui-surface);
+  --ink: var(--ui-ink);
+  --muted: var(--ui-muted);
+  --line: var(--ui-line);
+  --green: var(--ui-primary);
+  --sage: var(--ui-positive);
+  --coral: var(--ui-negative);
+  --yellow: var(--ui-accent);
+  --shadow: 3px 3px 0 var(--ui-shadow-soft);
+}
+
+.theme-control {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+  font-size: 11px;
+  line-height: 1.4;
+}
+.theme-control select {
+  font: inherit;
+  color: var(--ui-ink, #26372f);
+  background: var(--ui-surface, #eae2c9);
+  border: 2px outset var(--ui-line, #a4b28c);
+  border-radius: 0;
+  min-height: 36px;
+  padding: 5px 7px;
+  cursor: pointer;
+  max-width: 100%;
+}
+.theme-control select:focus-visible {
+  outline: 3px solid var(--ui-focus, #e7b775);
+  outline-offset: 3px;
+}
+/* Palette changes are immediate, so text never changes ahead of its background. */
+.action { transition-property: transform, box-shadow; }
+.welcome-theme-control { justify-content: center; margin-top: 12px; }
+.site-header nav { flex-wrap: wrap; gap: 12px 18px; }
+.site-header { height: auto; min-height: 78px; padding-block: 12px; }
+
+/* Explicit foreground/background pairs, including nested text on dark panels. */
+html:is([data-theme="light"], [data-theme="dark"]) :is(.primary-button, .end-week-button, .fund-submit, .bank-tabs button[aria-pressed="true"]):not(:disabled) {
+  background: var(--ui-primary);
+  color: var(--ui-on-primary);
+  border-color: var(--ui-line);
+  text-shadow: none;
+}
+html:is([data-theme="light"], [data-theme="dark"]) :is(.primary-button, .end-week-button, .fund-submit):hover:not(:disabled) {
+  background: var(--ui-primary-hover);
+}
+html:is([data-theme="light"], [data-theme="dark"]) :is(.primary-button, .end-week-button, .fund-submit):disabled {
+  background: var(--ui-surface-disabled);
+  color: var(--ui-faint);
+  opacity: 1;
+}
+html:is([data-theme="light"], [data-theme="dark"]) :is(.goal-strip, .place-header, .character-detail, .week-number) {
+  background: var(--ui-header);
+  color: var(--ui-on-header);
+}
+html:is([data-theme="light"], [data-theme="dark"]) :is(.goal-caption, .goal-value, .character-detail b, .place-header p, .place-header .eyebrow) {
+  color: var(--ui-header-muted);
+}
+html:is([data-theme="light"], [data-theme="dark"]) .goal.complete .goal-caption { color: #eedba1; }
+html:is([data-theme="light"], [data-theme="dark"]) .character-detail blockquote { color: var(--ui-on-header); }
+html:is([data-theme="light"], [data-theme="dark"]) .location-label {
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  text-shadow: none;
+}
+html:is([data-theme="light"], [data-theme="dark"]) .location-label b { text-shadow: none; }
+html:is([data-theme="light"], [data-theme="dark"]) .location-label small { color: var(--ui-muted); }
+html:is([data-theme="light"], [data-theme="dark"]) .selected .location-label {
+  background: #e6b95e;
+  color: #243b2b;
+  border-color: #f5d990;
+}
+html:is([data-theme="light"], [data-theme="dark"]) .selected .location-label small { color: #34482d; }
+html:is([data-theme="light"], [data-theme="dark"]) :is(.action, .event-option):disabled { opacity: 1; }
+html:is([data-theme="light"], [data-theme="dark"]) .action:disabled .action-title { color: var(--ui-faint); }
+html:is([data-theme="light"], [data-theme="dark"]) .action:disabled :is(.action-description, .action-cost, .action-effects) { color: var(--ui-faint); }
+html:is([data-theme="light"], [data-theme="dark"]) .welcome-brand { color: var(--ui-ink); text-shadow: 2px 2px var(--ui-shadow-soft); }
+html:is([data-theme="light"], [data-theme="dark"]) .welcome-brand em { color: var(--ui-accent); }
+html:is([data-theme="light"], [data-theme="dark"]) dialog::backdrop { background: var(--ui-overlay); }
+html:is([data-theme="light"], [data-theme="dark"]) .icon-button[aria-pressed="true"] { color: #24372e; background: #e6bd61; }
+html:is([data-theme="light"], [data-theme="dark"]) .site-header .quiet-button:hover { color: #f1ca85; }
+html:is([data-theme="light"], [data-theme="dark"]) .result-medal { color: #24372e; background: #e6bd61; }
+html:is([data-theme="light"], [data-theme="dark"]) .goal-track { background: #142720; }
+
+@media (max-width: 930px) {
+  .site-header { gap: 12px; }
+  .site-header nav { gap: 8px 12px; }
+}
+@media (max-width: 650px) {
+  .site-header { flex-wrap: wrap; padding-block: 12px 9px; gap: 10px; }
+  .site-header .brand { margin-inline-end: auto; }
+  .site-header nav { width: 100%; justify-content: space-between; gap: 6px; }
+  .theme-control { font-size: 11px; gap: 5px; }
+  .theme-control select { min-height: 40px; }
+  .site-header .quiet-button, .site-header .icon-button { min-height: 40px; }
+}
