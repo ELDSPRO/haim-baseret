@@ -1,5 +1,13 @@
-/* Classic uses the original colors in each declaration's fallback. */
-:root { color-scheme: light; }
+/* Keep the classic green shell; use cool surfaces for film and personal cards. */
+:root {
+  color-scheme: light;
+  --ui-accent: #465f70;
+  --ui-accent-surface: #d6e1e5;
+  --ui-accent-line: #899da6;
+  --ui-life: #665178;
+  --ui-life-surface: #e6e0eb;
+  --ui-life-line: #ab98b8;
+}
 
 :root[data-theme="light"] {
   color-scheme: light;
@@ -24,9 +32,9 @@
   --ui-header: #2c433c;
   --ui-on-header: #fff0ce;
   --ui-header-muted: #c8d3c0;
-  --ui-accent: #7d581c;
-  --ui-accent-surface: #f3e5c5;
-  --ui-accent-line: #a88748;
+  --ui-accent: #405a79;
+  --ui-accent-surface: #e5ebf1;
+  --ui-accent-line: #91a3bd;
   --ui-positive: #356342;
   --ui-positive-surface: #e3eddb;
   --ui-positive-line: #7b996b;
@@ -39,9 +47,9 @@
   --ui-purple: #72537e;
   --ui-purple-surface: #eee4ef;
   --ui-purple-line: #a589ad;
-  --ui-life: #855144;
-  --ui-life-surface: #f3e5d9;
-  --ui-life-line: #b08b73;
+  --ui-life: #665178;
+  --ui-life-surface: #ebe6f2;
+  --ui-life-line: #9b88af;
   --ui-focus: #9a5916;
   --ui-overlay: #172b25b3;
 }
@@ -70,13 +78,13 @@
   --ui-on-header: #f5e7c7;
   --ui-header-muted: #bdccbf;
   --ui-accent: #edc67f;
-  --ui-accent-surface: #3d3426;
-  --ui-accent-line: #a68e5c;
+  --ui-accent-surface: #293745;
+  --ui-accent-line: #849eaf;
   --ui-positive: #bbdca6;
   --ui-positive-surface: #2b3b2d;
   --ui-positive-line: #809d70;
   --ui-negative: #ffb9a6;
-  --ui-negative-surface: #422e2a;
+  --ui-negative-surface: #402c3b;
   --ui-negative-line: #b98978;
   --ui-info: #acd5eb;
   --ui-info-surface: #293c46;
@@ -84,9 +92,9 @@
   --ui-purple: #dfbde8;
   --ui-purple-surface: #3c3143;
   --ui-purple-line: #a18aad;
-  --ui-life: #edc1a9;
-  --ui-life-surface: #41362c;
-  --ui-life-line: #b19a7d;
+  --ui-life: #d3c5ec;
+  --ui-life-surface: #353447;
+  --ui-life-line: #a99bc1;
   --ui-focus: #f6cf7c;
   --ui-overlay: #050b0de0;
 }
